@@ -1,0 +1,878 @@
+{
+	autofocus_id: "266CDDD166A086DA"
+	default_hide_dependency_lines: false
+	default_quest_shape: "woodtier"
+	filename: "immersive_engineering"
+	group: "3C6437AAADAFC5CB"
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/i_upper.png"
+		}
+	}
+	id: "3DAD57E3F71B4E27"
+	images: [{
+		click: "https://www.youtube.com/watch?v=A21ar_pPMLM"
+		height: 1.0d
+		hover: ["Immersive Engineering Tutorial Video"]
+		image: "supplementaries:textures/gui/book/icon/youtube.png"
+		rotation: 0.0d
+		width: 1.0d
+		x: -7.0d
+		y: 2.0d
+	}]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["266CDDD166A086DA"]
+			description: ["The main tool we use for Immersive Engineering is the Engineer's Hammer. This allows us to rotate machinery as well as assemble the multiblock structures we will be building."]
+			id: "5C1E3ACFD2F9C650"
+			rewards: [{
+				count: 4
+				id: "2171F5F434266A88"
+				item: "immersiveengineering:stick_treated"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "1F061A6ED30AE0F9"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Hammah!"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Welcome to immersive engineering :D, Let's just dive in the mod!"
+				""
+				"&c&lI HEAVILY SUGGEST USING JEI!&r"
+				""
+				"Applying Creosote Oil to regular planks gives us access to Treated Planks. Treated Planks are used to make higher end equipment and machinery. We want to keep a steady supply of these."
+				""
+				""
+				"&7I don't really know the mod btw, so here's a tutorial video."
+			]
+			id: "266CDDD166A086DA"
+			rewards: [{
+				count: 12
+				id: "7DA1EE3637AEACD1"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			shape: "woodtier"
+			size: 1.5d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "0E47F7EF09AE37FD"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			title: "Starting Point!"
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5C1E3ACFD2F9C650"]
+			description: ["With Coke Dust in hand, we can begin production of a Coke Oven. This machine take some time to make but will provide us with access to Coal Coke and Creosote production."]
+			icon: "immersiveengineering:coke_oven"
+			id: "2D69C4A5F91F3CF7"
+			rewards: [{
+				count: 27
+				id: "7EB6F282A2F36081"
+				item: "immersiveengineering:cokebrick"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:coke_oven"
+				id: "4E6D23DD2814FF14"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:coke_oven"
+				type: "observation"
+			}]
+			title: "Sequential Oven"
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2D69C4A5F91F3CF7"]
+			description: [
+				"Making Steel thus far has been a tedious and resource hungry task. "
+				""
+				"Getting ourselves a Blast Furnace will allow us to utilize the Coal Coke we have been generating and super heat Iron into Steel. "
+				""
+				"This also produces a biproduct of Slag!"
+			]
+			icon: "immersiveengineering:blast_furnace"
+			id: "38DE58C8666609EC"
+			rewards: [{
+				count: 6
+				id: "2A8140073C9911A9"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:blast_furnace"
+				id: "7D3A260F4D951D3E"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:blast_furnace"
+				type: "observation"
+			}]
+			title: "Crudely Blasting"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38DE58C8666609EC"]
+			description: [
+				"With access to Steel now in full motion, we can upgade our Blast Furnace to a stronger and automatable machine. "
+				""
+				"This will increase the workflow of making Steel as well as add the ability to continuously produce steel through automation."
+			]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "023D129314703FD1"
+			rewards: [{
+				count: 2
+				id: "70E3B6F45DCB46F0"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:advanced_blast_furnace"
+				id: "0FF0597A645FC7D9"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:advanced_blast_furnace"
+				type: "observation"
+			}]
+			title: "Improved Blasting"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["023D129314703FD1"]
+			description: [
+				"With access to electricity, we can build Blast Furnace Preheaters to allow us to speed up our Improved Blast Furnace even more. "
+				""
+				"These machines provide extra heat to the block to speed up production."
+			]
+			id: "1A7921559FFAACAA"
+			rewards: [{
+				count: 2
+				id: "78796E8F85792D5E"
+				item: "immersiveengineering:connector_lv"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				count: 2L
+				id: "71413AACDF9C838F"
+				item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+				type: "item"
+			}]
+			title: "Powered Blasting"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["38DE58C8666609EC"]
+			description: [
+				"Another form of free energy is through the use of kinetic motion. "
+				""
+				"The Kinetic Dynamo allows you to use the flow of water or speeds of wind to generate power."
+			]
+			id: "1274E79019C28F4A"
+			rewards: [{
+				id: "1BA4E95A272E1675"
+				item: "immersiveengineering:dynamo"
+				type: "item"
+			}]
+			tasks: [{
+				id: "069DC4997CC22589"
+				item: "immersiveengineering:dynamo"
+				type: "item"
+			}]
+			title: "Electrical Kinetics"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["38DE58C8666609EC"]
+			description: [
+				"Passive energy is always a plus to have. "
+				""
+				"The Thermoelectric Generator produces power off the usage of heat differentials. "
+				""
+				"Simply place different heat blocks around it and watch the energy flow in. "
+				""
+				"Consult your Engineer's Manual for details of how much each block differs."
+			]
+			id: "77D17C04DD364CAE"
+			rewards: [{
+				count: 2
+				id: "338BBA59316F5732"
+				item: "minecraft:blue_ice"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16193146B991AF3D"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			title: "Heat Differential"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["266CDDD166A086DA"]
+			description: ["Building and designing same thing over and over again can be really... frustrating, so why not use schematicannon?"]
+			id: "780D07242DE7E506"
+			rewards: [{
+				id: "20FFC2CDDD0606AB"
+				item: "create:empty_schematic"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "3144AACC48F9F7D5"
+					item: "create:schematicannon"
+					type: "item"
+				}
+				{
+					id: "7CD13D0F35112632"
+					item: "create:schematic_table"
+					type: "item"
+				}
+			]
+			title: "Laying Schematics"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1274E79019C28F4A"]
+			description: [
+				"Connecting Water Wheels to the Kinetic Dynamo will begin to passively generate power with the flow of water. "
+				""
+				"You must make sure that the water is not also flowing to parts of the wheel is shouldn't be that would reduce its speed."
+			]
+			id: "2926E1B744FACF79"
+			rewards: [{
+				count: 3
+				id: "45FF07E828C8EEF7"
+				item: "immersiveengineering:watermill"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D5AE46CF4E7D8BC"
+				item: "immersiveengineering:watermill"
+				type: "item"
+			}]
+			title: "Water Wheeling"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1274E79019C28F4A"]
+			description: [
+				"The power of the wind can be harnessed through Windmills on the Kinetic Dynamo. "
+				""
+				"Just place one on the dynamo and the wind will passively generate power!"
+			]
+			id: "68BD97666C35C625"
+			rewards: [{
+				count: 5
+				id: "1EC41AF878373D51"
+				item: "immersiveengineering:treated_fence"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53B5DAA33C56D39D"
+				item: "immersiveengineering:windmill"
+				type: "item"
+			}]
+			title: "Windy Ways"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["68BD97666C35C625"]
+			description: [
+				"Windmill Sails increase the efficiency of our windmills. "
+				""
+				"Applying them to the windmill will allow us to gain more energy from the windmills."
+			]
+			id: "6A0DFE1D63712423"
+			rewards: [{
+				count: 4
+				id: "179EDD7E3CFEBBD8"
+				item: "immersiveengineering:hemp_fabric"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "6D1FB1ADEE757FD8"
+				item: { Count: 8, id: "immersiveengineering:windmill_sail" }
+				type: "item"
+			}]
+			title: "Sailing Away"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1274E79019C28F4A"]
+			description: [
+				"&dLV&r, &dMV&r and &dHV&r Accumulators are a compact way to store power. "
+				""
+				"They can be configured with the Engineer's Hammer to change input and output sides of the block."
+			]
+			id: "07283140B11FB4CC"
+			rewards: [{
+				id: "340BE7EEA7AC236C"
+				item: "immersiveengineering:capacitor_lv"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25D9E8A7DBDFAFC5"
+				item: "immersiveengineering:capacitor_lv"
+				type: "item"
+			}]
+			title: "Compact Storage"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["38DE58C8666609EC"]
+			description: [
+				"With access to a Metal Press, we can use electricty to great various plates, rods and wires."
+				""
+				"This can be much faster and more automateable than the Create Press."
+			]
+			icon: "immersiveengineering:metal_press"
+			id: "47EA72930E8B263C"
+			rewards: [{
+				id: "7AE70F4602B92D58"
+				item: "mekanism:block_steel"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:metal_press"
+				id: "6F037A92E36AB6C6"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:metal_press"
+				type: "observation"
+			}]
+			title: "Electrical Press"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["47EA72930E8B263C"]
+			description: [
+				"The multiblock Crusher from Immersive Engineering gives us access to crushing materials in a larger scale. "
+				""
+				"This machine crushes items down, sometimes into other materials we were not able to get before."
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:crusher"
+			id: "1787025054B9F175"
+			rewards: [{
+				count: 4
+				id: "0CB0FF78E37B101B"
+				item: "immersiveengineering:dust_saltpeter"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "immersiveengineering:crusher"
+				id: "3A6662D47938ECA3"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:crusher"
+				type: "observation"
+			}]
+			title: "Can it Crush"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1787025054B9F175"
+				"087EFD6289DFBB70"
+			]
+			description: [
+				"The Arc Furnace provides us with a simpiler way to be able to produce HOP Graphite without having to loose so many resources. "
+				""
+				"It also opens up the ability to begin processing all of the Osmium we had been gathering."
+			]
+			icon: "immersiveengineering:arc_furnace"
+			id: "546D8110EC3DA895"
+			rewards: [{
+				count: 4
+				id: "3D6013AC3689AF18"
+				item: "immersiveengineering:steel_scaffolding_standard"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "immersiveengineering:arc_furnace"
+				id: "0B9D8A1CC51C0B46"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:arc_furnace"
+				type: "observation"
+			}]
+			title: "Power Arc"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5ECDD562A5C902F6"]
+			description: [
+				"With Biodiesel in production, we can make a Diesel generator to start generating much more power than before. "
+				""
+				"This is one of our first major steps into large scale power protection."
+			]
+			id: "29E99CB108C9DD1E"
+			optional: true
+			rewards: [{
+				id: "762CB7BEE9D7B361"
+				item: "immersiveengineering:biodiesel_bucket"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:diesel_generator"
+				id: "745989B6286AA001"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:diesel_generator"
+				type: "observation"
+			}]
+			title: "Environmental Catastrophe"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1CA2206C39C24626"
+				"18EEE381A90610B5"
+			]
+			description: [
+				"With the Refinery, we can produce even newer resources by refining the ones we have. "
+				""
+				"We can combine our Ethanol and Plant Oil to make Biodiesel for our power productions. "
+				""
+				"We can also make Phenolic Resin to produce other materials we are going to need."
+			]
+			id: "5ECDD562A5C902F6"
+			rewards: [{
+				count: 6
+				id: "7AE44E11C3EC130C"
+				item: "immersiveengineering:fluid_pipe"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:refinery"
+				id: "30FA527898922D68"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:refinery"
+				type: "observation"
+			}]
+			title: "Refined"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["47EA72930E8B263C"]
+			description: [
+				"The Fermenter multiblock can be used to generate Ethanol. "
+				""
+				"This resource can be produce through various different crops and utilized into further resources."
+			]
+			id: "1CA2206C39C24626"
+			rewards: [{
+				id: "0DEF7ABF64045544"
+				item: "mekanism:block_steel"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:fermenter"
+				id: "4C4942CF3130646A"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:fermenter"
+				type: "observation"
+			}]
+			title: "Fermentation"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["47EA72930E8B263C"]
+			description: [
+				"The Industrial Squeezer is used to extra oil from seeds. "
+				""
+				"It can also be used to squeeze Coke Dust into Graphite Dust."
+			]
+			id: "18EEE381A90610B5"
+			rewards: [{
+				count: 10
+				id: "6B17996DF8D4DCA3"
+				item: "immersiveengineering:coal_coke"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:squeezer"
+				id: "65FBBB4C31373B63"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:squeezer"
+				type: "observation"
+			}]
+			title: "Squeezed Dry"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5ECDD562A5C902F6"
+				"6CBE6DD3F776E019"
+			]
+			description: [
+				"A Bottling Machine is key to producing further resources. "
+				""
+				"Phenolic Resing can be used and molded into Duroplast and Grinding Disks. "
+				""
+				"We can also use the Bottling Machine to create dusts of Redston acid."
+			]
+			id: "7BE55FA9BDE5E7F6"
+			rewards: [{
+				id: "13E2E178667B62EA"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:bottling_machine"
+				id: "261F32F2BAF6DE3F"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:bottling_machine"
+				type: "observation"
+			}]
+			title: "Bottled Up"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07283140B11FB4CC"]
+			description: [
+				"Thunderstorms are generally something you want to sleep through and get rid of, UNTIL now! "
+				""
+				"This the Lightning Rod, we can harness this power and generate energy from it. "
+				""
+				"The lightning will strike the rod and generate power. "
+				""
+				"Steel fences can be used to increase the height of the rod."
+			]
+			id: "1BFE52C0479C592E"
+			rewards: [{
+				count: 4
+				id: "6AF580533A68E85F"
+				item: "immersiveengineering:steel_fence"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "immersiveengineering:lightning_rod"
+				id: "402F6FB04767DA58"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:lightning_rod"
+				type: "observation"
+			}]
+			title: "Ka Chow!"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["29E99CB108C9DD1E"]
+			description: [
+				"Excavators are used to gather resources from the world. "
+				""
+				"Then can dig and gather the materials we find based on a chunk by chunk basis. "
+				""
+				"These machines will just gather and collect the resources until they are exhausted."
+			]
+			id: "7D4499A428665144"
+			optional: true
+			rewards: [{
+				id: "6C2A3B3C46CE05C5"
+				item: "mekanism:block_steel"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					icon: "immersiveengineering:bucket_wheel"
+					id: "6D9C0226972E88F0"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:bucket_wheel"
+					type: "observation"
+				}
+				{
+					icon: "immersiveengineering:excavator"
+					id: "323C3E89E908DA8B"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:excavator"
+					type: "observation"
+				}
+			]
+			title: "Diggy Diggy Hole"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["546D8110EC3DA895"]
+			description: [
+				"With the ability to finally process Osmium, we begin to start our journey into Mekanism!"
+				""
+				"This starts our path to smaller machines to perform larger tasks."
+			]
+			id: "6C694DEF01960C4A"
+			rewards: [{
+				id: "04AF017B82E8B687"
+				item: "mekanism:block_osmium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "20D73BFEE7D35A88"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			title: "New Age Metal"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["47EA72930E8B263C"]
+			description: [
+				"We must take our HOP Graphite and make it into Electrode Rods. "
+				""
+				"These are a crucial component in being able to run our Arc Furnace. "
+				""
+				"We can make rough rods using the Metal Press or we can find ourselves a trader and get the recipe to make them in an Engineer's Table."
+			]
+			id: "087EFD6289DFBB70"
+			rewards: [{
+				id: "05F1CF8DCE21FB5F"
+				item: {
+					Count: 1
+					id: "immersiveengineering:graphite_electrode"
+					tag: {
+						graphDmg: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "023A91782FFF74AE"
+				item: {
+					Count: 1
+					id: "immersiveengineering:graphite_electrode"
+					tag: {
+						graphDmg: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Early Electrodes"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["47EA72930E8B263C"]
+			description: [
+				"The Mixer is a machine we can use to mix up and make Redstone Acid. "
+				""
+				"This acid is crucial to progressing further into Mekanism. "
+				""
+				"We can also use the Mixer to combine experience with mob drops to create mob essence for special budding resources."
+			]
+			hide_dependency_lines: true
+			id: "6CBE6DD3F776E019"
+			rewards: [{
+				id: "244D3E3C1C5D20E9"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:mixer"
+				id: "32896D04250F32B3"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:mixer"
+				type: "observation"
+			}]
+			title: "Multi-Mixer"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["546D8110EC3DA895"]
+			description: [
+				"An Auto Workbench is going to be a crucial part of automating our workbench recipes. "
+				""
+				"We can set it up and provide it with materials and it will begin to make the recipes we set it to do."
+			]
+			icon: "immersiveengineering:auto_workbench"
+			id: "02AED649A06B3A01"
+			rewards: [{
+				count: 4
+				id: "1D8513B572EF9798"
+				item: "immersiveengineering:conveyor_basic"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "immersiveengineering:auto_workbench"
+				id: "436FF3111A1A7EBF"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:auto_workbench"
+				type: "observation"
+			}]
+			title: "AutoBelts Assemble"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38DE58C8666609EC"]
+			description: [
+				"While wood is abundant, we want to be able to cut it down and get more use from it. "
+				""
+				"The Sawmill allows us to cut our logs into planks more efficiently than our Create saw. "
+				""
+				"We also have the ability to get Sawdust, which is useful for making cardboard boxes."
+			]
+			id: "27162290957E5804"
+			rewards: [{
+				id: "2A5523BC54001B79"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "immersiveengineering:sawmill"
+				id: "013A31FD6DB835AD"
+				observe_type: 0
+				timer: 0L
+				title: "Woodworks"
+				to_observe: "immersiveengineering:sawmill"
+				type: "observation"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["266CDDD166A086DA"]
+			description: ["A large, slow, and powerful machine that can dig through the earth with ease. Shift and space to go up and down."]
+			id: "2A67ACEC999C6F85"
+			rewards: [{
+				id: "1D3A4DABBCACADF7"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "5927B4A0B6C8EE43"
+				item: "immersive_machinery:tunnel_digger"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["266CDDD166A086DA"]
+			description: ["A small and primitive redstone contraption for automating farms. It detects grass and plants in its proximity and harvests them. When idle or out of fuel, it returns to its home position."]
+			id: "4DC4C229343C2BF5"
+			rewards: [{
+				id: "04CD0C3463433EAC"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "56AEA341D150E59A"
+				item: "immersive_machinery:redstone_sheep"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["266CDDD166A086DA"]
+			description: ["A primitive submarine, small and maneuverable, perfectly suited for underwater exploration. Powered by a conduit, it has an unlimited air supply and can be upgraded with a variety of modules. Press (default) H to highlight entities using the inbuilt sonar!"]
+			id: "3EDC5A141CFDE4FB"
+			rewards: [{
+				id: "49AE3237F9F94141"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "1762CA84CA7370FF"
+				item: "immersive_machinery:copperfin"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["266CDDD166A086DA"]
+			description: ["A drone made from a modified quadcopter, capable of carrying items around. Mark one or more blocks as input, output, and off it goes. Optionally configure an item filter to avoid junk from getting distributed across your factory."]
+			id: "73F1C83EEBA49219"
+			rewards: [{
+				id: "5FCDD6624D2F3776"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "68BD405FB7017FFA"
+				item: {
+					Count: 1
+					id: "immersive_machinery:bamboo_bee"
+					tag: {
+						ContainerPositions: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: 2.5d
+		}
+	]
+	title: "Immersive Engineering"
+}

@@ -1,0 +1,1333 @@
+{
+	autofocus_id: "2F61EF4131AB4E54"
+	default_hide_dependency_lines: true
+	default_quest_shape: "woodtier"
+	filename: "tips"
+	group: "3B5FC78CC89E4CD7"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/b_upper.png"
+		}
+	}
+	id: "16752C5EB050EC7E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Lingango has tons of tricks that you won't realize in your normal gameplay. "
+				""
+				"This questline is about teaching you QoL tips to make your Lingango experience even better!"
+				""
+				"Wanna know about QoL Blocks? "
+				""
+				"Check: "
+				""
+				"{ \"text\": \"Additions Qustline\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"65B70A8030FC464D\" } }"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/info"
+				}
+			}
+			icon_scale: 1.2d
+			id: "2F61EF4131AB4E54"
+			rewards: [{
+				id: "1E4357561DE8A297"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "woodtier"
+			size: 1.4d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "4D148DA3947C52A1"
+				title: "Alright, cool!"
+				type: "checkmark"
+			}]
+			title: "Tips and Tricks"
+			x: 0.0d
+			y: -4.2d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: [
+				"Speed up smelting with Bellows!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"-Place next to a furnace (not on top)"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"-Activate with redstone to boost smelting speed"
+			]
+			icon: "supplementaries:bellows"
+			id: "723A65F4CD2E3A83"
+			rewards: [{
+				id: "0CE5D2B59CF22B53"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "goldtier"
+			subtitle: "Speed up smelting with furnaces."
+			tasks: [{
+				id: "2EB9F777891C69A1"
+				title: "Fanning the Flames"
+				type: "checkmark"
+			}]
+			title: "Bellows"
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: [
+				"Just throw it into a hole and it will start expanding like crazy!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"There's other variations check jei to see "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"@hole_filler_mod"
+			]
+			id: "08275C9A2F615AB1"
+			rewards: [
+				{
+					id: "64390F2793DC5660"
+					item: "hole_filler_mod:throwable_hole_filler"
+					type: "item"
+				}
+				{
+					id: "04C7FF14336AE821"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "320FF58990BBA41C"
+				item: "hole_filler_mod:throwable_hole_filler"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: ["You can gain additional wood by placing wooden furniture on top of a chopping board and chopping it with an axe."]
+			icon: "farmersdelight:cutting_board"
+			icon_scale: 1.3d
+			id: "2E644475313FFB93"
+			rewards: [{
+				id: "538CEA80AE951836"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "goldtier"
+			subtitle: "Reverse Carpenter"
+			tasks: [
+				{
+					id: "4E4D4668B6AA4E5B"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B527B6B941C3F85"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+			]
+			title: "More Wood With Careful Chopping"
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: ["U might see some nightmares.. about bedbugs especially."]
+			id: "762C45C931F53F10"
+			rewards: [{
+				count: 2
+				id: "010568A1A9386938"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			subtitle: "Sleep carefully."
+			tasks: [{
+				id: "580EB231FF290BE6"
+				item: "sleep_tight:dreamer_essence"
+				type: "item"
+			}]
+			title: "&dDreamer&r &eEssence"
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			dependency_requirement: "all_started"
+			description: ["U can connect the hammock between two fences."]
+			id: "002FD2AD62256920"
+			rewards: [{
+				count: 3
+				id: "2A39FD04348BA197"
+				item: "minecraft:white_wool"
+				type: "item"
+			}]
+			subtitle: "Sleep peacefully."
+			tasks: [{
+				id: "47BEF42E4EE87458"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_white"
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_green"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_blue"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_cyan"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_magenta"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_lime"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_light_blue"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_purple"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_pink"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_orange"
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_red"
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_brown"
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_black"
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_gray"
+							}
+							{
+								Count: 1b
+								id: "sleep_tight:hammock_light_gray"
+							}
+						]
+					}
+				}
+				title: "Make any hammock"
+				type: "item"
+			}]
+			title: "&eHammocks!"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "4380E60AF9577473"
+			rewards: [{
+				id: "4F998DC037C3A13C"
+				item: "sleep_tight:bedbug_eggs"
+				type: "item"
+			}]
+			subtitle: "Sleep warm."
+			tasks: [{
+				id: "3DEB19798D74D906"
+				item: "sleep_tight:night_bag"
+				type: "item"
+			}]
+			title: "&bNight&r &fBag"
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: [
+				"Transmogrification table allows you to change your armors appearance to the desired one."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You need amethyst shards to power it."
+			]
+			id: "030B781AC2B103AC"
+			rewards: [
+				{
+					id: "2C6EB53A986F09A6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "01E5E19DA67A58B6"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
+			subtitle: "Don't judge a book by its cover.."
+			tasks: [{
+				id: "5A75589BA7AECD51"
+				item: "transmog:transmogrification_table"
+				type: "item"
+			}]
+			title: "&dTransmogrification Table"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: ["Enchanting tables are not that boring now, you can roll the enchantment if u don't like it with lapis!"]
+			id: "211AA14A943E87B2"
+			rewards: [
+				{
+					id: "54BA79ED87431E0A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 6
+					id: "09285C4E65E0B767"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			shape: "diamondtier"
+			subtitle: "Classic.. not really!"
+			tasks: [{
+				id: "7B395457BE627315"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "&dEnchanting Table"
+			x: 0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: ["With enchantment infuser, you can choose the specific enchantment you want on your tool."]
+			id: "7ACC9BE21118707E"
+			rewards: [
+				{
+					id: "564DD499B9B57AE8"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 12
+					id: "6FA0CBF1C846FA4D"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			shape: "diamondtier"
+			subtitle: "No more relying on luck!"
+			tasks: [{
+				id: "5266E2A2CFFCF562"
+				item: "enchantinginfuser:enchanting_infuser"
+				type: "item"
+			}]
+			title: "&dEnchanting Infuser"
+			x: 0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "5BB689AA823C51EE"
+			rewards: [
+				{
+					id: "518C3478AA82E899"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "366A17F76DCA6704"
+					item: "minecraft:lapis_block"
+					type: "item"
+				}
+			]
+			shape: "netheritetier"
+			subtitle: "Well Same Thing But with Repairing!"
+			tasks: [{
+				id: "016AA4135F7202C1"
+				item: "enchantinginfuser:advanced_enchanting_infuser"
+				type: "item"
+			}]
+			title: "&dAdvanced Enchanting Infuser"
+			x: 0.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "29E91B8957CDE65A"
+			optional: true
+			rewards: [
+				{
+					id: "49673ADACD8A99F8"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+				{
+					id: "2456A5615068D1FA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "irontier"
+			subtitle: "Mines 3x3x1 Area"
+			tasks: [{
+				id: "0CE45DC60F48A8E0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "justhammers:iron_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"29E91B8957CDE65A"
+				"2F61EF4131AB4E54"
+			]
+			description: [
+				"Has more durability."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Automation Is Still Stronger Btw."
+			]
+			id: "1CA0C9C1BC1BA03B"
+			optional: true
+			rewards: [{
+				id: "02CA3D78F82636A2"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "netheritetier"
+			subtitle: "Mines 3x3x1 Area"
+			tasks: [{
+				id: "26CC8C1C03934706"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "justhammers:netherite_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"1CA0C9C1BC1BA03B"
+				"2F61EF4131AB4E54"
+			]
+			id: "1440F6D1566B277E"
+			optional: true
+			rewards: [{
+				id: "13FBD7666419C128"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "woodtier"
+			subtitle: "Key to making stronger hammers"
+			tasks: [{
+				id: "474CC7BCF7D66932"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "justhammers:impact_core"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "33F07C9D57ED01EE"
+			optional: true
+			rewards: [{
+				id: "0FF7A445554B2576"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamondtier"
+			subtitle: "Mines a 3x3x3 Area"
+			tasks: [{
+				id: "49CDD06F8BED2ADB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:netherite_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:stone_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:iron_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:gold_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:diamond_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "any impact hammer"
+				type: "item"
+			}]
+			title: "Impact Hammers"
+			x: -1.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "584FDBDF5CD63B33"
+			optional: true
+			rewards: [{
+				id: "556F7ED1DF6328D8"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "woodtier"
+			subtitle: "Key to make reinforced hammers"
+			tasks: [{
+				id: "30B6E612FA05C23A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "justhammers:reinforced_core"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "229FDE5A6C2106BC"
+			optional: true
+			rewards: [{
+				id: "1D66813F323A11E7"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "irontier"
+			subtitle: "Mines 5x5x1 Area"
+			tasks: [{
+				id: "1B31E9F9E21591F7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:iron_reinforced_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:stone_reinforced_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:gold_reinforced_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:diamond_reinforced_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:netherite_reinforced_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "any reinforced hammer"
+				type: "item"
+			}]
+			title: "Reinforced Hammers"
+			x: -1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "09AEF343D188004E"
+			optional: true
+			rewards: [{
+				id: "26BE271E0959D1FD"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "woodtier"
+			subtitle: "Nothing Gonna Stop You Now."
+			tasks: [{
+				id: "2C662A141145F2EC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "justhammers:reinforced_impact_core"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "445911E7F6E599EC"
+			optional: true
+			rewards: [{
+				id: "3F878540DD3D3F95"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "netheritetier"
+			subtitle: "Minex 5x5x3 Area"
+			tasks: [{
+				id: "4F12916F664C8978"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:stone_reinforced_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:iron_reinforced_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:gold_reinforced_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:diamond_reinforced_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:netherite_reinforced_impact_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "any reinforced impact hammer"
+				type: "item"
+			}]
+			title: "Reinforced impact hammers"
+			x: -1.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "4EE7D651231166A8"
+			optional: true
+			rewards: [{
+				id: "4840771EB20C3EAE"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "woodtier"
+			tasks: [{
+				id: "6C793F450E562FB0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "justhammers:destructor_core"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&cDesctruction Core"
+			x: -2.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "663142F430F679CB"
+			optional: true
+			rewards: [
+				{
+					id: "5E0FAC37AD94F94D"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75749BA91128C139"
+					table_id: 8699295573854160387L
+					type: "random"
+				}
+				{
+					id: "7E364E0A012FDA73"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "netheritetier"
+			subtitle: "Mines 5x5x5 Area"
+			tasks: [{
+				id: "50B9160304D37AD8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:stone_destructor_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:iron_destructor_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:gold_destructor_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:diamond_destructor_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "justhammers:netherite_destructor_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Destructor Hammers"
+				type: "item"
+			}]
+			title: "&cDestructors"
+			x: -1.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: ["Kelps can be used just like a bonemeal."]
+			icon_scale: 1.3d
+			id: "33AA1E29B02DB491"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "418E05807BC1FED8"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			subtitle: "Kelps as bonemeals"
+			tasks: [{
+				id: "4D6C70E4C66DF43A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:kelp"
+				}
+				type: "item"
+			}]
+			title: "&aKelp"
+			x: 2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: [
+				"The ore hammer can turn RAW ingots into dusts, but in this progress it also multiples them!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Not compatible with all ingots."
+			]
+			id: "592D954F384D4EA7"
+			rewards: [{
+				count: 4
+				id: "5C8441F5E0D6A78A"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			shape: "goldtier"
+			size: 1.0d
+			subtitle: "More MORE"
+			tasks: [{
+				id: "73D05C8470E6748F"
+				item: {
+					Count: 1
+					id: "alltheores:copper_ore_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Ore Duping!"
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: ["When you do so, the &aVine&r will no longer be able to grow."]
+			icon: {
+				Count: 1
+				id: "minecraft:shears"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "45A60F30FE07D68C"
+			shape: "irontier"
+			subtitle: "The tip of a vine can now be right-clicked with Shears."
+			tasks: [{
+				id: "646B18B1F7C13716"
+				type: "checkmark"
+			}]
+			title: "Shear Vine Tips"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			icon: "minecraft:chain"
+			id: "2AF635C9A39F5F1B"
+			rewards: [{
+				id: "3E612077245B4F92"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "Chains connect blocks together when a piston moves them."
+			tasks: [{
+				id: "51AD270EFE035299"
+				title: "OK"
+				type: "checkmark"
+			}]
+			title: "Chains Connect Blocks"
+			x: 2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			icon: "minecraft:piston"
+			id: "2FF5FB2938BE9E5C"
+			subtitle: "Pistons are allowed to move Tile Entities (blocks with extra data attached, like Chests or Furnaces)."
+			tasks: [{
+				id: "040EBFEC21FBE3FA"
+				type: "checkmark"
+			}]
+			title: "Pistons Move Tile Entities"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			icon: "minecraft:stripped_oak_log"
+			id: "13E11BD1BA2C7CBE"
+			rewards: [{
+				id: "0A4D3C28009B2280"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "goldtier"
+			subtitle: "Axes can be used in dispensers to strip or scrape blocks."
+			tasks: [{
+				id: "05B8FAED63B712AA"
+				type: "checkmark"
+			}]
+			title: "Stripping or scraping blocks by dispenser"
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: [
+				"By default it'll turn direction once, so it can build blocks horizontally if you extend &aScaffolds&r that way."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"If you wish to use the default behaviour of placing blocks on the &aScaffold&r, you can still do it with &6Shift&r + &6Right-Click&r."
+			]
+			icon: "minecraft:scaffolding"
+			id: "3EB7EF62044B9BDE"
+			subtitle: "Right-clicking on a Scaffold with a block will attempt to replace the block at the end of the Scaffold chain."
+			tasks: [{
+				id: "1702A766806B4D5E"
+				type: "checkmark"
+			}]
+			title: "Replace Scaffolding Blocks"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: ["Placed &abooks&r can give enchanting power to an &aEnchanting Table&r. The power given depends on the number and type of &abooks&r used."]
+			icon: "minecraft:book"
+			id: "77F07A4539C74D35"
+			subtitle: "Enchanted and normal books can be placed and thus have a block form."
+			tasks: [{
+				id: "376CBE042329A4D7"
+				type: "checkmark"
+			}]
+			title: "Placeable Books"
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			icon: "minecraft:compass"
+			id: "0C463BE958D2D54A"
+			shape: "irontier"
+			subtitle: "In the Nether, the compass points to the portal through which you entered the Nether."
+			tasks: [{
+				id: "043E5CA99A68CB3C"
+				type: "checkmark"
+			}]
+			title: "Nether Portal Compass"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: ["Very useful if you prefer a smaller dragon."]
+			id: "0D0F0866A84425B8"
+			subtitle: "Stops ageing when fed to young animals."
+			tasks: [{
+				id: "41DF3E7ACB6CAE95"
+				item: "minecraft:poisonous_potato"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			icon: "minecraft:rotten_flesh"
+			id: "0E9F6656377B2F11"
+			subtitle: "Feeding rotten flesh to a tamed skeleton horse will slowly convert it into a zombie horse."
+			tasks: [{
+				id: "7EAD7EC8007C427E"
+				type: "checkmark"
+			}]
+			title: "Zombie Horse Conversion"
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "6C0DBEBFF21FC785"
+			subtitle: "Can be used as shears."
+			tasks: [{
+				id: "103E5960F0778725"
+				item: {
+					Count: 1
+					id: "ecologics:crab_claw"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: [
+				"Breaking grass or crops with a &aHoe&r will now break them in a 3x3 area."
+				"A &aDiamond Hoe&r will break a 5x5 area instead."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You can add a &3Fortune enchantement&r to a &aHoe&r to get extra drops from grass and crops."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "33130AEBC1DCD488"
+			rewards: [{
+				id: "3465FF15C2C8E1CC"
+				type: "xp"
+				xp: 67
+			}]
+			subtitle: "Learn how to use a hoe better."
+			tasks: [{
+				id: "474E60E7BE997636"
+				type: "checkmark"
+			}]
+			title: "Improved Hoes"
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			id: "2ACA30F07F34EAAE"
+			rewards: [{
+				id: "0221F285F856BD0F"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "goldtier"
+			subtitle: "Anything can be done from your inventory now!"
+			tasks: [
+				{
+					id: "0D77EC2B697D1A90"
+					item: "crafting_on_a_stick:crafting_table"
+					type: "item"
+				}
+				{
+					id: "26A112A27422CCA7"
+					item: "crafting_on_a_stick:loom"
+					type: "item"
+				}
+				{
+					id: "39B36DE1C1F611FC"
+					item: "crafting_on_a_stick:grindstone"
+					type: "item"
+				}
+				{
+					id: "7C1A76177F8EAB99"
+					item: "crafting_on_a_stick:cartography_table"
+					type: "item"
+				}
+				{
+					id: "405220310BAE671B"
+					item: "crafting_on_a_stick:stonecutter"
+					type: "item"
+				}
+				{
+					id: "6C248CC609D4AD13"
+					item: "crafting_on_a_stick:smithing_table"
+					type: "item"
+				}
+				{
+					id: "1442B3C3AB58AE3D"
+					item: "crafting_on_a_stick:anvil"
+					type: "item"
+				}
+			]
+			title: "... On a Stick!"
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2F61EF4131AB4E54"]
+			description: [
+				"This mod allows you to smelt 2 Ores at the same time!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"This how you build it:"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"a 3x3 floor on the bottom then a 2 block tall ''+'' (the middle is empty) on it."
+				""
+				"And just put the controller block somewhere looking out."
+			]
+			id: "2BD33D1E4453C587"
+			rewards: [
+				{
+					count: 3
+					id: "7C24446550DD70B7"
+					item: "minecraft:coal_block"
+					type: "item"
+				}
+				{
+					id: "6606B720034CA79F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "goldtier"
+			subtitle: "&fAlloy smelter"
+			tasks: [
+				{
+					id: "6A6A6D55EBAA660A"
+					item: "alloy_smelter:forge_controller_tier1"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "32238F0EEC8FAF79"
+					item: { Count: 16, id: "minecraft:bricks" }
+					type: "item"
+				}
+			]
+			title: "&dBigger Furnaces!"
+			x: 2.5d
+			y: -6.5d
+		}
+	]
+	title: "Basics"
+}

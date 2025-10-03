@@ -1,0 +1,1144 @@
+{
+	autofocus_id: "368F6A7C3C3134DB"
+	default_hide_dependency_lines: false
+	default_quest_shape: "woodtier"
+	filename: "storage_solutions"
+	group: "3C6437AAADAFC5CB"
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/s_upper.png"
+		}
+	}
+	id: "5F6B7CD03DAE57CA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The Barrel Functions similarly to the Chest, but it does not require an empty space above it to be opened. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The only downside is that you cannot combine the inventory of two Barrels. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Barrel holds 27 stacks of items."
+			]
+			icon: "minecraft:barrel"
+			id: "320A7F10EF29D32A"
+			rewards: [
+				{
+					count: 8
+					id: "31760AA6A64575A2"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A241C5B25F50651"
+					item: "sophisticatedstorage:basic_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "4D6836EABE27E55C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "woodtier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "7197A06FC54AFB80"
+				item: "minecraft:barrel"
+				title: "Craft a Barrel"
+				type: "item"
+			}]
+			title: "The Barrel"
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"183F457F923574A9"
+				"320A7F10EF29D32A"
+			]
+			description: [
+				"This Quest serves to remind you that you do not have to break your existing chests or barrels to upgrade them! "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Instead, craft the proper storage upgrade and right click to upgrade your existing storage!"
+			]
+			icon: "sophisticatedstorage:basic_tier_upgrade"
+			id: "6B690848B1CE0F3E"
+			rewards: [
+				{
+					count: 2
+					id: "332B8AF94D8BCF1B"
+					item: "sophisticatedstorage:basic_to_copper_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "41CED8EA1D32E4AE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "70B0BBA9D93269EC"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+				type: "item"
+			}]
+			title: "Tiered Upgrades"
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"The Chest is most likely going to be the first way that you store your items more permanantly. Crafted from Logs or Planks, the Chest can hold 27 stacks of items."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Combining two chests into a double chest by placing them beside each other nets you 54 total stacks of item storage - perfect for storing your early game spoils."
+			]
+			icon: "minecraft:chest"
+			id: "183F457F923574A9"
+			rewards: [
+				{
+					count: 8
+					id: "18C6593728736320"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "25D7B9EE3586F5E0"
+					item: "sophisticatedstorage:basic_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "58559C0474DB0903"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				icon: "minecraft:chest"
+				id: "70367235C1DD570D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+				title: "Craft any Wooden Chest"
+				type: "item"
+			}]
+			title: "The Chest"
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Customizable backpacks that can be placed, colored upgraded for more space, and enhanced with functional features. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"See the JEI to look at recipes."
+				""
+				"{@pagebreak}"
+				""
+				"Press \"&bShift+&bB&r\" to open your Backpack."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Press \"&bMiddle Mouse/Wheel&r\" for Inventory sorting."
+			]
+			disable_toast: true
+			id: "368F6A7C3C3134DB"
+			rewards: [
+				{
+					id: "1E8D7329276A39FD"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2B5F66AC48ACBAB8"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "1F31ED9AC15544DE"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"The Hopper Pulls items from an inventory above, and puts them into the inventory that the bottom of the Hopper points into. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You can make the bottom of the Hopper face into an inventory by shift right clicking when you place the Hopper."
+			]
+			id: "06561799D9C0ADD8"
+			rewards: [
+				{
+					count: 8
+					id: "402B1242A018504D"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "0F996E9908BA9666"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "41EFF307BF663DF8"
+				item: "minecraft:hopper"
+				type: "item"
+			}]
+			title: "The Hopper"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			id: "61646DB635ED9329"
+			rewards: [
+				{
+					id: "3D33236D4186D702"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "5942802E863E448D"
+					item: "compact_storage:compact_chest_white"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "22B80D3CC39F624F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_white"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_orange"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_magenta"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_light_blue"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_yellow"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_lime"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_pink"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_light_gray"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_gray"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_green"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_cyan"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_blue"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_black"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_red"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_chest_brown"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "Any Compact Chest"
+				type: "item"
+			}]
+			title: "Craft a Iron Compact Chest"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			id: "60D6020C438756C4"
+			rewards: [
+				{
+					id: "3824A04E76ECE147"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "29D7F7192A1489FB"
+					item: "compact_storage:compact_barrel_white"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2E6CFA1B36D34622"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_light_gray"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_cyan"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_blue"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_green"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_red"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_purple"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_black"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_gray"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_pink"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_lime"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_yellow"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_light_blue"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_magenta"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_orange"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:compact_barrel_white"
+							}
+						]
+					}
+				}
+				title: "Any Compact Barrel"
+				type: "item"
+			}]
+			title: "Craft a Iron Compact Barrel"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			id: "6D83781AE162200B"
+			rewards: [
+				{
+					id: "564C9121398FAFEA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2A61A1B27DD8BB56"
+					item: "compact_storage:backpack_white"
+					type: "item"
+				}
+			]
+			subtitle: "Backpacks.. again?"
+			tasks: [{
+				id: "3D049AAC62F0E6CD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "compact_storage:backpack_pink"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_lime"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_yellow"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_light_blue"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_magenta"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_orange"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_white"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_brown"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_gray"
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_blue"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_black"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_red"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_green"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_cyan"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_light_gray"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:backpack_purple"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "Any Compact Backpack"
+				type: "item"
+			}]
+			title: "Craft a ''Compact'' Backpack"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			id: "304E3FB84DE11E77"
+			rewards: [
+				{
+					id: "13E5F803B0406EB3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "67250263A4CCF3BB"
+					item: "compact_storage:oak_drum"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "57CD19998AA1D676"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "compact_storage:acacia_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:birch_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:crimson_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:cherry_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:dark_oak_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:jungle_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:oak_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:bamboo_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:warped_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:spruce_drum"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:mangrove_drum"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "Any Item Drum"
+				type: "item"
+			}]
+			title: "Craft A Item Drum"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "04C14E9A5F71FBB4"
+			rewards: [
+				{
+					id: "4A797B9A30E8DEE3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "0E269C2ABB6EC47B"
+					item: "compact_storage:oak_compact_chest"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7773DF6644B2A104"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "compact_storage:crimson_compact_chest"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:spruce_compact_chest"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:acacia_compact_chest"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:cherry_compact_chest"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:dark_oak_compact_chest"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:mangrove_compact_chest"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:oak_compact_chest"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:bamboo_compact_chest"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:warped_compact_chest"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:jungle_compact_chest"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "Any Compact Chest"
+				type: "item"
+			}]
+			title: "Craft A Wooden Compact Chest"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "6AD919FBC7270F2C"
+			rewards: [
+				{
+					id: "461E55734FE298C3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "66EF74487CD3FCFB"
+					item: "compact_storage:oak_compact_barrel"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3EC881F631C919F0"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "compact_storage:oak_compact_barrel"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:acacia_compact_barrel"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:birch_compact_barrel"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:dark_oak_compact_barrel"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:mangrove_compact_barrel"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:spruce_compact_barrel"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:cherry_compact_barrel"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:bamboo_compact_barrel"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:warped_compact_barrel"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "compact_storage:jungle_compact_barrel"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "Any Compact Barrel"
+				type: "item"
+			}]
+			title: "Craft A Wooden Compact Barrel"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6D83781AE162200B"
+				"61646DB635ED9329"
+				"60D6020C438756C4"
+				"304E3FB84DE11E77"
+				"6AD919FBC7270F2C"
+				"04C14E9A5F71FBB4"
+			]
+			description: [
+				"Storage Upgrade Height - Taller Chest"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Storage Upgrade Width - Fatter Chest"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Storage Upgrade Retainer - Items Remain In Chest When Broken (Shulker)"
+			]
+			id: "7A766C393B8BDAF7"
+			rewards: [
+				{
+					id: "22B5DDCB3246C420"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "26B11671BA89D40D"
+					item: "compact_storage:upgrade_column"
+					type: "item"
+				}
+				{
+					id: "0D2B9DDA3ED94849"
+					item: "compact_storage:upgrade_row"
+					type: "item"
+				}
+			]
+			shape: "irontier"
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "6B2A372FE06AECD0"
+					item: "compact_storage:upgrade_column"
+					type: "item"
+				}
+				{
+					id: "20612BF920667E4C"
+					item: "compact_storage:upgrade_row"
+					type: "item"
+				}
+				{
+					id: "7E3ED77364A1001F"
+					item: "compact_storage:upgrade_retainer"
+					type: "item"
+				}
+			]
+			title: "Storage Upgrades"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1812A79944021D76"]
+			id: "49A012E78620BCB1"
+			rewards: [{
+				id: "2CDD68FE8DBA6397"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3AFD84E7B8D52946"
+				item: "toms_storage:ts.inventory_proxy"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1812A79944021D76"]
+			description: ["Extension cables, but instead of electricity, it is essentially an item cable."]
+			id: "408C34432E394C2B"
+			rewards: [{
+				id: "687A65A092B604B6"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Transport Items"
+			tasks: [
+				{
+					id: "6D5ED7E8751D87C8"
+					item: "toms_storage:ts.inventory_cable"
+					type: "item"
+				}
+				{
+					id: "707B082B1A9F6240"
+					item: "toms_storage:ts.inventory_cable_framed"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			description: ["Think of wires all connecting from several places into a single point."]
+			id: "1812A79944021D76"
+			rewards: [{
+				id: "6E235259E06672F1"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "irontier"
+			size: 1.2d
+			subtitle: "The Brain"
+			tasks: [{
+				id: "3D7616496DA3521D"
+				item: "toms_storage:ts.inventory_connector"
+				type: "item"
+			}]
+			title: "Touch"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1812A79944021D76"]
+			description: ["If you know how Create's item vault and filters work, this is similar."]
+			id: "3C1E7E02FDDFF8E3"
+			rewards: [{
+				id: "6B5813BA6036A969"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Basically a advanced hopper with filter"
+			tasks: [{
+				id: "57CCD702C6F8AD64"
+				item: "toms_storage:ts.inventory_hopper_basic"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1812A79944021D76"]
+			description: ["You can craft while you're away from your main base, but remember that it is quite costly for such a benefit."]
+			id: "5E783474BA6980E3"
+			rewards: [{
+				id: "2131E108868F53D5"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Bluetooth Crafting"
+			tasks: [
+				{
+					id: "4EA516B03DB9C790"
+					item: "toms_storage:ts.wireless_terminal"
+					type: "item"
+				}
+				{
+					id: "256E3A469E9BE3EF"
+					item: "toms_storage:ts.adv_wireless_terminal"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1812A79944021D76"]
+			description: [
+				"Have a look at your entire inventory like a computer looking at all their files in one place and access them."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Mainly placed on an &6inventory connector block&r."
+			]
+			id: "4918B0939E4604A0"
+			rewards: [{
+				id: "4EFA66653794A016"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "No more looking for 50 chests to find one item"
+			tasks: [
+				{
+					id: "51ABC8AF78B685AB"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+				{
+					id: "2B908AACADC06896"
+					item: "toms_storage:ts.crafting_terminal"
+					type: "item"
+				}
+			]
+			title: "Terminals"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6B690848B1CE0F3E"]
+			id: "216D096157FF02AB"
+			rewards: [
+				{
+					id: "3100FEF53B8893C1"
+					item: "sophisticatedstorage:copper_to_iron_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "59AF37826BA6FF36"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "51EA26633FD7B1C9"
+				item: "sophisticatedstorage:copper_to_iron_tier_upgrade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["216D096157FF02AB"]
+			id: "5FA292B5A9AE2CBA"
+			rewards: [
+				{
+					id: "7F3FDAF59A9A9CD8"
+					item: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "398DFE8307902A3B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "75BEF8A03A066D98"
+				item: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5FA292B5A9AE2CBA"]
+			id: "3FABB6CC60C8F9E8"
+			rewards: [
+				{
+					id: "32004239DD20D251"
+					item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "1F2BFA12FC426EAD"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "29F69C48D3C4CB27"
+				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3FABB6CC60C8F9E8"]
+			id: "404F11AEBC680A84"
+			rewards: [
+				{
+					id: "68F7321FD670AC24"
+					item: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "353AFA7200A9E76B"
+					item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+					type: "item"
+				}
+				{
+					id: "087A66394FD65C48"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "3E1C88F5CA2EB5C3"
+				item: "sophisticatedstorage:diamond_to_netherite_tier_upgrade"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6B690848B1CE0F3E"]
+			description: ["Right-click with a packing tape to a chest or barrel, then break it!"]
+			id: "2851902853A56AEC"
+			rewards: [{
+				id: "21E501CDE9026E72"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Carry your storage easily!"
+			tasks: [{
+				id: "5A0AFC3BEDAE24C9"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:packing_tape"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2851902853A56AEC"]
+			id: "7EB0338ED916C41B"
+			rewards: [{
+				id: "7C38BBC76D540C0A"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Carry more"
+			tasks: [{
+				id: "04D24C31715CBF9A"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:super_packing_tape"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6B690848B1CE0F3E"]
+			id: "59F7038CD4C2E8CF"
+			rewards: [{
+				id: "3B360245BD910C85"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Read item description!"
+			tasks: [{
+				id: "049CC22BF3419649"
+				item: "sophisticatedstorage:paintbrush"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6B690848B1CE0F3E"]
+			id: "79012B06FF889D83"
+			rewards: [{
+				id: "78EC1A396AA0A76F"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Read item description!"
+			tasks: [{
+				id: "0E413DB4520883AA"
+				item: "sophisticatedstorage:storage_tool"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6B690848B1CE0F3E"]
+			id: "708063C2382699C6"
+			tasks: [{
+				id: "7CD2725D2CB15A99"
+				item: "sophisticatedstorage:decoration_table"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+	]
+	title: "Storage Solutions"
+}

@@ -1,0 +1,223 @@
+{
+	autofocus_id: "0F426527B63F854D"
+	default_hide_dependency_lines: false
+	default_quest_shape: "netheritetier"
+	filename: "simply_swords"
+	group: "3C6AB1DE39D4F441"
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/s_upper.png"
+		}
+	}
+	id: "75316E8D631F174C"
+	images: [{
+		height: 1.5d
+		image: "simplyswords:item/twisted_blade"
+		rotation: 0.0d
+		width: 1.5d
+		x: -10.0d
+		y: -13.0d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Simply Swords&r has tons of weapons to play around with!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"It also has the unique socketing mechanic to make your weapons stronger."
+			]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "simplyswords:runic_grimoire"
+				}
+			}
+			id: "0F426527B63F854D"
+			rewards: [
+				{
+					id: "4990EA6F31E34290"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 3
+					id: "6FE0BF1D6A5156CE"
+					item: "simplyswords:runic_tablet"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E12586E60A353E5"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+			]
+			shape: "woodtier"
+			size: 1.54d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "6461B5E43F7DF63E"
+					title: "Alright man"
+					type: "checkmark"
+				}
+				{
+					id: "6DB4A88379161C44"
+					item: "simplyswords:runic_tablet"
+					type: "item"
+				}
+			]
+			title: "Simply Swords"
+			x: -10.01d
+			y: 2.31d
+		}
+		{
+			dependencies: ["574677AD427E33FB"]
+			description: [
+				"Empowered Remnants&r are created by melting down unique weapons."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"They are used in the creation of Runefused Gems&r, and Netherfused Gems&r."
+			]
+			id: "5AA2A1E358A18B4E"
+			rewards: [
+				{
+					id: "484700ADEF26CFD9"
+					item: "simplyswords:empowered_remnant"
+					type: "item"
+				}
+				{
+					id: "5BF39C352371EC2D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 4
+					id: "3AD57D6DAA2392B8"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+			]
+			size: 1.5d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "5DF612576542C997"
+				item: "simplyswords:empowered_remnant"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5AA2A1E358A18B4E"]
+			description: [
+				"To make it, combine a &bRunic Tablet&r with a &cEmpowered Remnant&r in a Smithing Table."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Click to identify which power you have rolled."
+			]
+			id: "3E5207641E8653DC"
+			rewards: [
+				{
+					id: "0B046175AB1496F5"
+					item: "simplyswords:empowered_remnant"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7E8172D545591CF2"
+					item: "simplyswords:runic_tablet"
+					type: "item"
+				}
+				{
+					id: "123D0FDCADF578A5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			size: 1.5d
+			subtitle: "Made with &kmeowMAW&r"
+			tasks: [{
+				id: "5C78E6FA3E4F93CB"
+				item: {
+					Count: 1
+					id: "simplyswords:runefused_gem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5AA2A1E358A18B4E"]
+			description: [
+				"Combine a &cEmpowered Remnant&r with a &6Netherite Ingot&r in a Smithing Table."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Click to identify which power you have rolled."
+			]
+			id: "47EBDA6516061205"
+			rewards: [
+				{
+					id: "5B95526DD588D574"
+					item: "simplyswords:empowered_remnant"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "00F0A6CDD2E3D77C"
+					item: "simplyswords:runic_tablet"
+					type: "item"
+				}
+				{
+					id: "09E4171B6A7E42EB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			size: 1.5d
+			subtitle: "Crafted with empowered remmnant"
+			tasks: [{
+				id: "1F673D38D2BBDA24"
+				item: {
+					Count: 1
+					id: "simplyswords:netherfused_gem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F426527B63F854D"]
+			description: ["This will be the first step in discovering sockets and runic powers!"]
+			id: "574677AD427E33FB"
+			rewards: [{
+				id: "4614B78F16F62367"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			size: 1.5d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "0D8720163BD20211"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "simplyswords:uniques"
+					}
+				}
+				title: "any unique weapon"
+				type: "item"
+			}]
+			title: "Obtain any unique weapon"
+			x: -10.0d
+			y: 0.5d
+		}
+	]
+	title: "Simply Swords"
+}

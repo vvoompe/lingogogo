@@ -1,0 +1,166 @@
+{
+	autofocus_id: "2F1254B3AF8A1556"
+	default_hide_dependency_lines: false
+	default_quest_shape: "goldtier"
+	filename: "primordal_caves"
+	group: "52FA8429D8BF5933"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/p_upper.png"
+		}
+	}
+	id: "55F853E58E3A469C"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E9E3DDE7643EB26"]
+			id: "2F1254B3AF8A1556"
+			rewards: [{
+				id: "1E99FFF89A0DCE95"
+				type: "xp"
+				xp: 20
+			}]
+			size: 2.0d
+			subtitle: "The Cave that Time Forgot"
+			tasks: [{
+				biome: "alexscaves:primordial_caves"
+				icon: "alexscaves:flytrap"
+				id: "7D9A57535DBFCAAE"
+				title: "Find Primordial Caves"
+				type: "biome"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2F1254B3AF8A1556"]
+			id: "49FE1271DC918D78"
+			subtitle: "Craft an Ominous Catalyst"
+			tasks: [{
+				id: "6537CAF0D02DDFF3"
+				item: "alexscaves:ominous_catalyst"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["49FE1271DC918D78"]
+			description: [
+				"To summon, throw the Ominous Catalyst&r into the Primal Magma&r of the Volcano&r within the cave. "
+				""
+				"This will summon the Luxtructosaurus&r, an ancient undead primordial that will hurl fireballs at you during combat. Equip yourself with a good ranged weapon&r, strong melee weapon&r and good, heavy armour&r in hopes of slaying this beast."
+			]
+			icon: "alexscaves:tectonic_shard"
+			id: "0A924BF9335C4404"
+			rewards: [{
+				id: "519A809D6BBD6438"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.0d
+			subtitle: "Slay the Tectonic Terror"
+			tasks: [{
+				entity: "alexscaves:luxtructosaurus"
+				icon: "alexscaves:tectonic_shard"
+				id: "23B891AC9467A9C3"
+				title: "Luxtructosaurus"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0A924BF9335C4404"
+				"7D2336B063F65A9D"
+			]
+			description: ["Craft an Extinction Spear&r, forged with the armour of the Luxtructosaurus&r and with the power of extinction, this legendary spear is a formiddable ranged weapon&r that incapacitates enemies it come in contact with."]
+			id: "39705CED3E4D9BB2"
+			subtitle: "Life at your Fingertips"
+			tasks: [{
+				id: "569B0EC8831DD76F"
+				item: {
+					Count: 1
+					id: "alexscaves:extinction_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2F1254B3AF8A1556"]
+			id: "7D2336B063F65A9D"
+			rewards: [{
+				id: "0289CC5D40820388"
+				item: "alexscaves:amber_curiosity"
+				type: "item"
+			}]
+			subtitle: "Another Throwaway Joke?"
+			tasks: [{
+				id: "7D0C1C9093F83347"
+				item: "alexscaves:limestone_spear"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2F1254B3AF8A1556"]
+			description: [
+				"Don't question. Just do the quest."
+				""
+				""
+				"Put 5 different types of dinosaurs from the caves into minecarts near each other.&r"
+			]
+			id: "39D86E13D531C90C"
+			rewards: [{
+				id: "65B66989E6503F2B"
+				type: "xp"
+				xp: 20
+			}]
+			size: 1.1d
+			subtitle: "\"All Aboard!\""
+			tasks: [{
+				advancement: "alexscaves:alexscaves/dinosaurs_minecart"
+				criterion: ""
+				id: "0A4E10B0B3A8C827"
+				title: "Dinosaur Train"
+				type: "advancement"
+			}]
+			x: 0.55d
+			y: -3.3000000000000003d
+		}
+		{
+			dependencies: ["2F1254B3AF8A1556"]
+			description: ["Would recommend have decent gear for this objective. They bite..."]
+			id: "2EBDAB081637B055"
+			rewards: [{
+				id: "2E8227288206D1ED"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Slay a Large Dinosaur within the Cave"
+			tasks: [{
+				advancement: "alexscaves:alexscaves/defeat_big_dinosaur"
+				criterion: ""
+				icon: "alexscaves:heavy_bone"
+				id: "0D484D31E5750497"
+				title: "Re-Extinct"
+				type: "advancement"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+	]
+	title: "Primordal Caves"
+}

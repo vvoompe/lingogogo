@@ -1,0 +1,1500 @@
+{
+	autofocus_id: "79097B7E3E4E2782"
+	default_hide_dependency_lines: false
+	default_quest_shape: "woodtier"
+	filename: "progress"
+	group: "3C6AB1DE39D4F441"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/m_upper.png"
+		}
+	}
+	id: "315A75112DB595D9"
+	images: [{
+		click: "https://discord.com/invite/YmkPejcU5n"
+		height: 2.2d
+		hover: ["Join Official Lingango Server!"]
+		image: "hexerei:textures/book/pictures/hexerei_discord.png"
+		rotation: 0.0d
+		width: 7.5d
+		x: -6.5d
+		y: -3.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5D3E8E9BCD0A9935"]
+			id: "576B748D6A278CFD"
+			rewards: [{
+				count: 5
+				id: "50D1D01B34779C6D"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "14832D3AA38C82F7"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Iron Unlocked!"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["79097B7E3E4E2782"]
+			description: [
+				"As u may have realized, you are not able to break iron because u haven't beaten the iron colossus boss yet. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You may ask, if i can't break iron, how am  i supposed to earn it? Well that has one simple easy answer."
+				""
+				"It's loot chests of course. (or iron golem)"
+			]
+			id: "5D3E8E9BCD0A9935"
+			rewards: [
+				{
+					id: "4BBDD7DF127D3C90"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "042653DBB022DCCB"
+					item: {
+						Count: 1
+						id: "minecraft:chainmail_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "14877BC3081C56D9"
+					item: {
+						Count: 1
+						id: "minecraft:chainmail_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E16CD5B99B1EB08"
+					item: {
+						Count: 1
+						id: "minecraft:chainmail_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "irontier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "39392EAA73398E23"
+				item: {
+					Count: 1
+					id: "armageddon_mod:iron_remote"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Why cant i break iron?"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependency_requirement: "one_started"
+			description: [
+				"Armageddon mod completely overhauls minecrafts normal progression with something far more exciting!"
+				""
+				"This mod also adds bosses and other ores aswell."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "armageddon_mod:textures/armageddon_smalllogo2.png"
+				}
+			}
+			icon_scale: 1.45d
+			id: "79097B7E3E4E2782"
+			rewards: [
+				{
+					auto: "disabled"
+					id: "7B7EA0DFBB80BACE"
+					item: {
+						Count: 1
+						id: "armageddon_mod:primitive_pike"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AE5570E77B12CC0"
+					type: "xp"
+					xp: 25
+				}
+			]
+			shape: "circle"
+			size: 1.5d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					disable_toast: true
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "armageddon_mod:textures/armageddon_smalllogo2.png"
+						}
+					}
+					id: "63EA418D3EEA25E9"
+					title: "Armageddon Mod!"
+					type: "dimension"
+				}
+				{
+					elapsedTime: 10L
+					id: "503794A1364FA734"
+					title: "Wait!"
+					type: "questsadditions:time"
+				}
+			]
+			title: "Unique Progression"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["576B748D6A278CFD"]
+			description: ["In order to get to gold ingot, we need to kill the goblin lord!"]
+			icon_scale: 1.2d
+			id: "7D0C439E5D207DDE"
+			rewards: [
+				{
+					id: "4766217826F32981"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "55F05BB830B1324F"
+					item: "minecraft:milk_bucket"
+					type: "item"
+				}
+			]
+			shape: "goldtier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "2AEC50CF84DFB0EE"
+				item: {
+					Count: 1
+					id: "armageddon_mod:strange_coin"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessing The Gold!"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7D0C439E5D207DDE"]
+			id: "060C5B36EAB63F6F"
+			rewards: [{
+				count: 5
+				id: "4B217E5E5D4CC953"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "6ED1D12B68D96375"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			title: "Gold Unlocked!"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["060C5B36EAB63F6F"]
+			description: ["Arion is a elite pillager with some tricks, be aware!"]
+			id: "4F34F740CD095315"
+			rewards: [
+				{
+					id: "4EB4A30F36090522"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "254D5F0DD01F5474"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "armageddon_mod:resistance"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "irontier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "694DA8D87F0DA4F3"
+				item: {
+					Count: 1
+					id: "armageddon_mod:emerald_totem"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessing The Emerald!"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F34F740CD095315"]
+			id: "0BB4BBAFEA0E6737"
+			rewards: [{
+				count: 5
+				id: "6681234AC8A4ACBE"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "7BC3CE510D3166E2"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "Emerald Unlocked!"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0BB4BBAFEA0E6737"]
+			description: [
+				"Eldorath is a old warrior.. his prime was years ago, still though he's a dangerous foe."
+				""
+				"Make sure u bring some bucket of waters to survive falls!"
+				""
+				"&nKilling this boss also unlocks enchanting.&r"
+			]
+			id: "2EAC826E47A3A682"
+			rewards: [
+				{
+					id: "03B21987FCF6AE60"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "4DEB3DA93CA04CFD"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			shape: "diamondtier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "3FD1CCE976B9831B"
+				item: {
+					Count: 1
+					id: "armageddon_mod:builder_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessing The Diamond"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2EAC826E47A3A682"]
+			id: "0DD43CE364723AAF"
+			rewards: [{
+				count: 3
+				id: "0BFDBF9CE6D5EBB1"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "1684FA057F15DE31"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "Diamond Unlocked!"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0DD43CE364723AAF"]
+			description: [
+				"Zoranth is a fierce warrior, be careful!"
+				""
+				"Can be only spawned in nether."
+			]
+			id: "297F31BB6030C00F"
+			rewards: [
+				{
+					id: "212482A63204488F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "376FE8126F87CEC2"
+					item: "born_in_chaos_v1:dark_metal_ingot"
+					type: "item"
+				}
+			]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "7C71359E6E149A5C"
+				item: {
+					Count: 1
+					id: "armageddon_mod:fiery_wither_skull"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessing The Netherite"
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["297F31BB6030C00F"]
+			id: "0A7522A1038B5A29"
+			rewards: [{
+				count: 5
+				id: "56586356C8BF5125"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "60C8CFED1DABB380"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			title: "Netherite Unlocked!"
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0A7522A1038B5A29"]
+			description: [
+				"Elvenite is a new ore added by Armageddon mod. "
+				""
+				"Slay this boss to unlock it!"
+			]
+			id: "231B06216159E95A"
+			rewards: [
+				{
+					id: "69471ED992C1BAAD"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "55EBBBFEF2F31B22"
+					table_id: 8699295573854160387L
+					type: "random"
+				}
+			]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "0E74AD81045EEB1A"
+				item: {
+					Count: 1
+					id: "armageddon_mod:titan_insigna"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessing The Elvenite"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["231B06216159E95A"]
+			id: "606821A591F8A3FB"
+			rewards: [{
+				count: 5
+				id: "487052AABBB7651A"
+				item: "armageddon_mod:raw_elvenite"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "0BF3AE45C0DA2014"
+				item: "armageddon_mod:raw_elvenite"
+				type: "item"
+			}]
+			title: "Elvenite Unlocked!"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["606821A591F8A3FB"]
+			description: [
+				"Vaedric used to be a wanderer in the end, well.. we could say he didn't ended up well."
+				""
+				"Unlocks Voiderite!"
+			]
+			id: "4E97AB0CAB1A3763"
+			rewards: [{
+				id: "254A39AF4CC6C281"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "7F803DA0A30DEC5E"
+				item: {
+					Count: 1
+					id: "armageddon_mod:wanderers_fallen_shard"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4E97AB0CAB1A3763"]
+			id: "0D72085C785D2741"
+			rewards: [{
+				count: 5
+				id: "4651E32009F332EA"
+				item: "armageddon_mod:voiderite"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "5E78C468EF2C4913"
+				item: "armageddon_mod:voiderite"
+				type: "item"
+			}]
+			title: "Voiderite Unlocked!"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0D72085C785D2741"]
+			description: [
+				"Killing this boss will drop an item which is important for the incoming boss fights."
+				""
+				"Doesn't unlock a ore."
+			]
+			id: "338DD0DDABBF130D"
+			rewards: [{
+				id: "537805152AFD0CDB"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "7BD2921B77B302C6"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_key_of_doom"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["338DD0DDABBF130D"]
+			description: ["The Four Calamity are the one of the main reasons why the overworld is filled with undead monsters."]
+			id: "4BFFC4F93792C4F7"
+			rewards: [{
+				id: "34258A2B3475E35E"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "7371A1AA3D9C1A4A"
+				item: {
+					Count: 1
+					id: "armageddon_mod:sigil_of_calamity"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BFFC4F93792C4F7"]
+			description: [
+				"In order to craft Ankh's tablet we will need Tinkerer's Accessory Template."
+				""
+				"How to craft the Tinkerer's Accesory Template&r?"
+				""
+				"First, you have to obtain spirits. Which are dropped from vanilla mobs such as zombie, slime and skeleton."
+				""
+				"Each mob drops different type of spirit. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"&cDespair, Dread and Chaos&r"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"With these, craft a calamitous core."
+				""
+				"Then with Khyros's Goldened Tear we can craft an &dAccesory Template&r"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Here's The Recipe:"
+				""
+				"Make a U with end stones and put the calamitous core in the middle, on top of that put the Khyros's Goldened Tear."
+			]
+			icon_scale: 1.3d
+			id: "5C70A89677BEAE60"
+			rewards: [
+				{
+					count: 2
+					id: "5A75B786CF8722B6"
+					item: "armageddon_mod:tinkerers_accesory_template"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "30801AFA2914300A"
+					item: "armageddon_mod:khyros_tear"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4EBE0668ADA83EBB"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "183C3929E8920459"
+					item: "armageddon_mod:ankh_tablet"
+					type: "item"
+				}
+				{
+					id: "1F99ED038B57F08F"
+					item: "armageddon_mod:calamitous_core"
+					type: "item"
+				}
+				{
+					id: "603529B0326755DE"
+					item: "armageddon_mod:khyros_tear"
+					type: "item"
+				}
+			]
+			title: "Craft an Ankh Tablet"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C70A89677BEAE60"]
+			icon_scale: 1.3d
+			id: "357C9116554FDDB6"
+			rewards: [
+				{
+					id: "7759DB985AFFBA6B"
+					type: "xp"
+					xp: 200
+				}
+				{
+					count: 2
+					id: "4671AE3253B163F5"
+					item: "armageddon_mod:calamitous_core"
+					type: "item"
+				}
+			]
+			shape: "goldtier"
+			size: 1.0d
+			subtitle: "Drops More Spirits!"
+			tasks: [{
+				id: "2E5958B4FFEA99E2"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_specters_judgement"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C70A89677BEAE60"]
+			id: "23EC2AF983714756"
+			rewards: [{
+				id: "7BD06D9AFE309018"
+				item: "armageddon_mod:calamitous_core"
+				type: "item"
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			tasks: [{
+				id: "045F5DB716131267"
+				item: {
+					Count: 1
+					id: "armageddon_mod:ultimate_sword_of_the_elements"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&3Craft The Ultimate Sword Of Elements!"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["23EC2AF983714756"]
+			icon_scale: 1.2d
+			id: "4150C10448E605C6"
+			rewards: [{
+				id: "23645750E063320B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "goldtier"
+			size: 1.0d
+			subtitle: "Be careful, do not blow yourself!"
+			tasks: [{
+				id: "0C8C4B44DDE44829"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_doom_caller_bell"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["23EC2AF983714756"]
+			id: "42B92871C5C115D4"
+			rewards: [
+				{
+					id: "1BBBE767401ABA72"
+					item: "armageddon_mod:spiritof_chaos"
+					type: "item"
+				}
+				{
+					id: "5AAED6FF4E997A99"
+					item: "armageddon_mod:doom_powder"
+					type: "item"
+				}
+			]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "Hits hard!"
+			tasks: [{
+				id: "2F3EF2093242D002"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_oathbreaker_of_chaos"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["42B92871C5C115D4"]
+			id: "719A120CBDCFA7C6"
+			rewards: [
+				{
+					id: "429E5143FCE35683"
+					item: "armageddon_mod:spiritof_chaos"
+					type: "item"
+				}
+				{
+					id: "55E53B3FC86100E2"
+					item: "armageddon_mod:spiritof_dread"
+					type: "item"
+				}
+			]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "Teleports The Target Randomly"
+			tasks: [{
+				id: "085F3B7580ADACBB"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_rift_piercer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["719A120CBDCFA7C6"]
+			id: "43CD23EAB4E38ACC"
+			rewards: [{
+				id: "0232D1483328A720"
+				item: "farmersdelight:dog_food"
+				type: "item"
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "Can be eaten."
+			tasks: [
+				{
+					id: "018441A1C772BFA2"
+					item: {
+						Count: 1
+						id: "armageddon_mod:the_hungery_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "64F8B20FDB02633E"
+					item: {
+						Count: 1
+						id: "armageddon_mod:the_hungery_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "19059B6B1858B4AD"
+					item: {
+						Count: 1
+						id: "armageddon_mod:the_hungery_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&eThe Hungery Tools"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["43CD23EAB4E38ACC"]
+			id: "263FCCF068B2457B"
+			rewards: [{
+				id: "0DBB16A9093061E6"
+				item: {
+					Count: 1
+					id: "armageddon_mod:rustyswordofthelegendaryhero"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "Deal More Damage When You Are Hungry."
+			tasks: [{
+				id: "62F63E1FED01AE98"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_sword_of_the_starved"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["263FCCF068B2457B"]
+			id: "121F9DDE6B03350C"
+			rewards: [{
+				id: "7180BBC2039936E6"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamondtier"
+			size: 1.0d
+			subtitle: "Mines Blocks Further Than Normal."
+			tasks: [
+				{
+					id: "17735768C273FABE"
+					item: {
+						Count: 1
+						id: "armageddon_mod:hollow_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56658B530244CBFA"
+					item: {
+						Count: 1
+						id: "armageddon_mod:hollow_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A46F59E44BDE540"
+					item: {
+						Count: 1
+						id: "armageddon_mod:hollow_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&bThe Hollow Toolset "
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["121F9DDE6B03350C"]
+			id: "179079E52A8F1D9D"
+			rewards: [
+				{
+					id: "551407184E4ECE1F"
+					item: "armageddon_mod:spirit_of_despair"
+					type: "item"
+				}
+				{
+					id: "48B09520FA50A0C5"
+					item: "armageddon_mod:spiritof_dread"
+					type: "item"
+				}
+				{
+					id: "3B049580C4925A64"
+					item: "armageddon_mod:spiritof_chaos"
+					type: "item"
+				}
+			]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "Unbreakable."
+			tasks: [
+				{
+					id: "3BE14E44D3666A84"
+					item: {
+						Count: 1
+						id: "armageddon_mod:echo_of_discord"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1305017B9BA7504E"
+					item: {
+						Count: 1
+						id: "armageddon_mod:the_teleportation_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&5Echo of Discord and Shadow Step Dagger"
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["179079E52A8F1D9D"]
+			description: ["Lord of the Blood Ore.. more like mohg lord of the blood?"]
+			id: "25326B961DE6B5EA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09BF73DB3D29D473"
+				table_id: 8699295573854160387L
+				type: "random"
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "4359AEA5A7EC91E3"
+				item: {
+					Count: 1
+					id: "armageddon_mod:cocoon_of_blood"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Accessing The Blood!"
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["25326B961DE6B5EA"]
+			id: "77DE683328D318F4"
+			rewards: [{
+				count: 2
+				id: "3C8804C067BC6F9C"
+				item: "armageddon_mod:bloody_ingot"
+				type: "item"
+			}]
+			shape: "irontier"
+			size: 1.0d
+			tasks: [{
+				id: "431AE8601B11DB70"
+				item: "armageddon_mod:bloody_ingot"
+				type: "item"
+			}]
+			title: "Blood Unlocked!"
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["77DE683328D318F4"]
+			id: "7652F93DFDEBEDD0"
+			rewards: [{
+				id: "2EAE31D2D9081C93"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "goldtier"
+			size: 1.0d
+			tasks: [{
+				id: "4AA4A8C85973F82F"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_chaos_saber"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Path Of Chaos!"
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7652F93DFDEBEDD0"]
+			id: "6BEE024519AA1BC8"
+			rewards: [{
+				id: "35F9CDA9D6CF6A51"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			tasks: [{
+				id: "5CD5D6892DBB8945"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_annihilation"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Annihilation!"
+			x: -3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["77DE683328D318F4"]
+			id: "5ED8B1FD86E9503C"
+			rewards: [{
+				id: "25ABFD6D6CF35AF7"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			tasks: [{
+				id: "12CB7FC27C7D92E2"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_vampiric_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Path of Darkness!"
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["77DE683328D318F4"]
+			id: "644F7F2640A4BB12"
+			rewards: [{
+				id: "2D4E2C9A2AD87644"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "woodtier"
+			size: 1.0d
+			tasks: [{
+				id: "08940AD51EA79BE1"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_holy_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Path Of Light!"
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5ED8B1FD86E9503C"]
+			description: ["Umvuthi's older brother....... they look kinda different though."]
+			id: "647CCE4CA1600E21"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4459A0E2D1E948BF"
+				table_id: 8699295573854160387L
+				type: "random"
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "2A6C4BFBB6B26F6D"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_sun_emblem"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Unlocking The Helionate!"
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["647CCE4CA1600E21"]
+			id: "7AD8DA2FD7E244C1"
+			rewards: [{
+				count: 2
+				id: "51765F1F09BF610D"
+				item: "armageddon_mod:helionite_ingot"
+				type: "item"
+			}]
+			shape: "goldtier"
+			size: 1.0d
+			tasks: [{
+				id: "79005F4B2370EF15"
+				item: "armageddon_mod:helionite_ingot"
+				type: "item"
+			}]
+			title: "Helionate Unlocked!"
+			x: -6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7AD8DA2FD7E244C1"]
+			description: [
+				"Nyxaris is a beast, monster a vile disgusting ruthless creature being."
+				""
+				"You will need this absorbing stone, in order to ease the fight."
+			]
+			id: "1116B72E3021814D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DCEF425144BF060"
+				table_id: 8699295573854160387L
+				type: "random"
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "449E223179E59B1B"
+					item: {
+						Count: 1
+						id: "armageddon_mod:the_corrupted_tear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3895F14CC093E082"
+					item: {
+						Count: 1
+						id: "armageddon_mod:absorbtion_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Main Reason Of Corruption"
+			x: -6.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7AD8DA2FD7E244C1"]
+			id: "23E1DF08A7CA0C99"
+			rewards: [{
+				id: "2C93CA339184425A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "goldtier"
+			size: 1.0d
+			tasks: [{
+				id: "0A62029FD3E4F3EF"
+				item: {
+					Count: 1
+					id: "armageddon_mod:true_helionite_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Power of Sun!"
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1116B72E3021814D"]
+			hide_until_deps_complete: false
+			id: "39867387D6F546DC"
+			shape: "netheritetier"
+			size: 1.0d
+			tasks: [{
+				id: "234322E18C07EAC7"
+				item: {
+					Count: 1
+					id: "armageddon_mod:the_duskfire_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1116B72E3021814D"]
+			id: "60661E4C4F4D63CA"
+			shape: "netheritetier"
+			size: 1.0d
+			tasks: [{
+				id: "4F574C7B0678C84F"
+				item: {
+					Count: 1
+					id: "armageddon_mod:lance_of_the_veil"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["121F9DDE6B03350C"]
+			id: "5C060955CA1FE2FE"
+			rewards: [{
+				id: "37B4C8C9BF0291AD"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamondtier"
+			size: 1.0d
+			subtitle: "Get Stronger If Submerged In Water."
+			tasks: [
+				{
+					id: "4B33163859226C4A"
+					item: {
+						Count: 1
+						id: "armageddon_mod:the_prismatic_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D2C3EEC5244CA0F"
+					item: {
+						Count: 1
+						id: "armageddon_mod:prismatic_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20E6A8CDFE81B501"
+					item: {
+						Count: 1
+						id: "armageddon_mod:prismatic_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6723C24087FA69E4"
+					item: {
+						Count: 1
+						id: "armageddon_mod:prismatic_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6222D835AAA78200"
+					item: {
+						Count: 1
+						id: "armageddon_mod:prismatic_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0AB10678785336DF"
+					item: {
+						Count: 1
+						id: "armageddon_mod:prismatic_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&bThe Whole Prismatic Set!"
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5D3E8E9BCD0A9935"]
+			description: ["No matter what, you will definetely find this one item, be sure to equip it!"]
+			icon_scale: 1.2d
+			id: "28DED46855BAA3C5"
+			rewards: [
+				{
+					id: "3E8B72658F623DAD"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "3234BE3A8F9CC5E9"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			shape: "woodtier"
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "46C6F76988541F5D"
+				item: {
+					Count: 1
+					id: "enigmaticlegacy:enigmatic_eye"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "It's Destined"
+			x: -3.9833333333333485d
+			y: -0.22857142857143486d
+		}
+		{
+			description: [""]
+			id: "2F44E2DDBFAA150F"
+			rewards: [{
+				auto: "enabled"
+				command: "/clear @p"
+				elevate_perms: true
+				id: "2AD1F461CBC2D859"
+				silent: true
+				type: "command"
+			}]
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					id: "4F06F95C239DC6AC"
+					type: "dimension"
+				}
+				{
+					disable_toast: true
+					elapsedTime: 5L
+					id: "6C8FCC397C680F29"
+					type: "questsadditions:time"
+				}
+			]
+			title: "inv cleaner / dont mind"
+			x: -56.0d
+			y: 44.0d
+		}
+		{
+			id: "2F6C7BFB1B3BC9A9"
+			rewards: [{
+				auto: "enabled"
+				id: "057544343989CECB"
+				item: "ftbquests:book"
+				type: "item"
+			}]
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					id: "3E7FD565C46E8D1D"
+					type: "dimension"
+				}
+				{
+					elapsedTime: 20L
+					id: "44E9718FD8BBE7BA"
+					type: "questsadditions:time"
+				}
+			]
+			title: "quest giver / dont mind"
+			x: -56.0d
+			y: 45.0d
+		}
+		{
+			dependencies: ["4BFFC4F93792C4F7"]
+			description: ["Hard mode is a feature where it makes the whole game harder, in order to enter it you have to kill the ender dragon."]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "goety_spillage:item/skull_bomb"
+				}
+			}
+			id: "302B0C04C49FF20D"
+			rewards: [{
+				id: "2F60B5A686588728"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "goldtier"
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "323FC1D394F4D1A6"
+				title: "wow.. ok"
+				type: "checkmark"
+			}]
+			title: "Hard Mode"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "0CD4E94FA7609745"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "7BCD4C2C310D3AED"
+					item: "prehistoricfauna:cretaceous_fossil"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					id: "4AFFE895A23C729D"
+					item: "prehistoricfauna:triassic_fossil"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					id: "5EDDEF55AC8C2426"
+					item: "prehistoricfauna:jurassic_fossil"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7F2C30663E1CACCA"
+				item: "prehistoricfauna:time_totem"
+				type: "item"
+			}]
+			x: -56.0d
+			y: 46.0d
+		}
+	]
+	title: "Main Progression"
+}

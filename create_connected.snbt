@@ -1,0 +1,653 @@
+{
+	autofocus_id: "769D1D5B36D849D2"
+	default_hide_dependency_lines: false
+	default_quest_shape: "woodtier"
+	filename: "create_connected"
+	group: "3C6437AAADAFC5CB"
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/c_upper.png"
+		}
+	}
+	id: "16920DFB6C8BDE8E"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1742597D48E37800"]
+			description: [
+				"Create Connected expands the mechanical possibilities of Create with smarter, more versatile components. Use Fan Catalysts to aid in easier fan processing, reverse motion with specialized clutches and gearboxes, and connect machines more efficiently with built-in cogwheels."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"It’s not about more machines-it’s about better ones."
+			]
+			icon: "create_connected:brass_gearbox"
+			id: "769D1D5B36D849D2"
+			rewards: [{
+				id: "780A43FEBB9429D4"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "goldtier"
+			size: 1.5d
+			subtitle: "Links and Leverage"
+			tasks: [{
+				id: "1029399E7909E005"
+				title: "Click Me!"
+				type: "checkmark"
+			}]
+			title: "Welcome To Create Connected"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"Every upgrade starts somewhere. The Empty Fan Catalyst is the uncharged core-full of potential."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You’ll need it to make all the specialized catalysts that transform your fans into focused processing tools."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"To make one of the catalysts below, simply right click the empty catalyst with the proper item in your hand!"
+			]
+			hide_dependency_lines: true
+			id: "5D6433B36939DADB"
+			rewards: [
+				{
+					id: "33774F11D75A8B21"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "1569413F8540ABD4"
+					item: "create_connected:empty_fan_catalyst"
+					type: "item"
+				}
+			]
+			subtitle: "A Blank Slate"
+			tasks: [{
+				id: "7B84A39925AA3295"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			title: "Fan Processing - Simplified"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5D6433B36939DADB"]
+			description: [
+				"               Lava and Water"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Two forces, with one goal: better processing. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Blasting Catalysts perform blasting encased fan recipes, while Washing Catalysts perform washing encased fan recipes. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Master them both to expand your automation capabilities."
+			]
+			icon: "create_connected:fan_blasting_catalyst"
+			id: "06F63FC2DEF3AAEE"
+			rewards: [
+				{
+					id: "12B510D036592C7B"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "25AFE21BA0240F67"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "The Power of Heat and High Pressure"
+			tasks: [
+				{
+					id: "1C2081D3711B570D"
+					item: "create_connected:fan_blasting_catalyst"
+					type: "item"
+				}
+				{
+					id: "6D864542E2587122"
+					item: "create_connected:fan_splashing_catalyst"
+					type: "item"
+				}
+			]
+			title: "Blasting/Washing"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5D6433B36939DADB"]
+			description: [
+				"Haunting and Smoking Catalysts channel the Nether’s power-soul fire for spectral conversions, and burning embers for smoke and cooking."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Made from soul sand and netherrack, these catalysts let you tame a darker side of processing."
+			]
+			icon: "create_connected:fan_smoking_catalyst"
+			id: "2A43C321D945E480"
+			rewards: [
+				{
+					id: "188727E799852179"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D56833824EB711D"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "The Nether, Contained"
+			tasks: [
+				{
+					id: "35CE17A383CEDC7F"
+					item: "create_connected:fan_smoking_catalyst"
+					type: "item"
+				}
+				{
+					id: "1AAE7028C80867E2"
+					item: "create_connected:fan_haunting_catalyst"
+					type: "item"
+				}
+			]
+			title: "Smoking/Haunting"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5D6433B36939DADB"]
+			description: [
+				"Born from dreams and shaped by extremes-Seething and Freezing Catalysts bring even higher (and lower) temperatures to fan automation. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"To view the recipes they can perform, check the uses of the Industrial Fan-which must be used to make these catalysts function. "
+			]
+			icon: "create_connected:fan_seething_catalyst"
+			id: "73462D40F7A249DF"
+			rewards: [
+				{
+					id: "6E5D0AD78EC8B9A5"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4EDB837F394D3F0D"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Dreamed and Desired"
+			tasks: [
+				{
+					id: "69F5D2A2A00BEE90"
+					item: "create_connected:fan_seething_catalyst"
+					type: "item"
+				}
+				{
+					id: "299587F3512889E1"
+					item: "create_connected:fan_freezing_catalyst"
+					type: "item"
+				}
+			]
+			title: "Seething/Freezing"
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"The Inventory Access Port and Inventory Bridge offer smarter ways to interact with your storage."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Inventory Access Port connects to a single inventory and lets you insert or extract items directly. It's great for compact setups in tight areas where accessing the inventory is difficult."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Inventory Bridge links two inventories together, treating them as one. Attach pipes or funnels to the Bridge to move items into or out of both inventories."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Neither block increases storage space or supports daisy-chaining. Turn them off with a redstone signal. "
+			]
+			hide_dependency_lines: true
+			icon: "create_connected:inventory_access_port"
+			id: "0C32897ECA99D42E"
+			rewards: [
+				{
+					id: "6BD2E88D5402DFA9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "707AF89B401C455D"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Linked Logistics"
+			tasks: [
+				{
+					count: 4L
+					id: "34B18CD1AD8283EC"
+					item: "create_connected:inventory_access_port"
+					type: "item"
+				}
+				{
+					id: "4C0E9BF0896D4FD9"
+					item: "create_connected:inventory_bridge"
+					type: "item"
+				}
+			]
+			title: "An Inventory Expansion"
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"{\"text\":\"The Linked Transmitter allows a button or lever to act as a remote redstone signal source. Once placed, it functions like a \",\"extra\":[{\"text\":\"Redstone Link\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1FC55FA8C1C417CB\"},\"color\":\"blue\",\"underlined\":true},{\"text\":\", and supports two frequency slots for customized signals.\"}]}"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Use shift + right-click to lock in a frequency and prevent accidental changes. Whether you’re triggering machines across a factory or syncing distant contraptions, this block keeps your signals clean and wireless."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Check the ponder for the Sequenced Pulse Generator to learn more about its advanced redstone logic!"
+			]
+			hide_dependency_lines: true
+			icon: "create_connected:linked_transmitter"
+			id: "634920C8917EB526"
+			rewards: [
+				{
+					id: "4A4362A32410994E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "14C1294AF3C947FB"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Rewired"
+			tasks: [
+				{
+					id: "0A97D02EF1449295"
+					item: "create_connected:linked_transmitter"
+					type: "item"
+				}
+				{
+					id: "77620FD7958011C8"
+					item: "create_connected:sequenced_pulse_generator"
+					type: "item"
+				}
+				{
+					id: "410DD2A743B8BAE4"
+					item: "create_connected:redstone_link_wildcard"
+					type: "item"
+				}
+			]
+			title: "Advanced Redstone"
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: ["The Item Silo works just like a normal Item Vault, holding the same amount of items, but instead of stretching wide, it stacks upward. Perfect for vertical builds or compact storage towers where horizontal space is limited."]
+			hide_dependency_lines: true
+			id: "3207F62A39DCCD3D"
+			rewards: [
+				{
+					id: "36E5182CCD4DEF78"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "396F418870BF63D1"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+			]
+			subtitle: "Items to the Sky!"
+			tasks: [{
+				id: "01C6770A77C91813"
+				item: "create_connected:item_silo"
+				type: "item"
+			}]
+			title: "Item Vault, but Better"
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: ["The Fluid Vessel stores just as much as a regular Fluid Tank, but in a horizontal layout. It’s great for low, wide builds or when you want to tuck storage under machines without building upward."]
+			hide_dependency_lines: true
+			id: "2E12BC020FBDEFBA"
+			rewards: [
+				{
+					id: "7A23D68B42F460A0"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "42C2B188BC08D9B1"
+					item: "create:copper_sheet"
+					type: "item"
+				}
+			]
+			subtitle: "Did Somebody Say... Low Profile?"
+			tasks: [{
+				id: "5A350F9D1F3AFF69"
+				item: "create_connected:fluid_vessel"
+				type: "item"
+			}]
+			title: "A Tank on Its Side"
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"These components are designed to help you manage, or intentionally trigger, overstressed networks:"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Shear Pin behaves like a normal shaft, but breaks instantly if the connected network becomes overstressed. It’s a simple failsafe for protecting key components."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Overstress Clutch decouples after a delay when overstress is detected."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Brake does the opposite. When powered by redstone, it dumps immense stress into the system, deliberately causing overstress. Perfect for emergency shutdowns."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Use these parts to control failure, not suffer from it."
+			]
+			hide_dependency_lines: true
+			icon: "create_connected:overstress_clutch"
+			id: "641180F86A783961"
+			rewards: [
+				{
+					id: "3F3E9FFA39FC5D4C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "473C3EC46D416477"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Built to Break"
+			tasks: [
+				{
+					id: "672DEA2E4C84F4FF"
+					item: "create_connected:shear_pin"
+					type: "item"
+				}
+				{
+					id: "50EE6CFA2EFB0C4A"
+					item: "create_connected:overstress_clutch"
+					type: "item"
+				}
+				{
+					id: "42CF7B5E41AC0826"
+					item: "create_connected:brake"
+					type: "item"
+				}
+			]
+			title: "Overstressed Systems"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"These clutches only engage under specific conditions, making them perfect for automation that reacts to speed or rotation direction."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Centrifugal Clutch connects only when the input RPM exceeds a set threshold. It’s great for delaying engagement until your system speeds up."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Freewheel Clutch only couples when the input is spinning in the correct direction, based on its configured setting. Use it to control motion based on rotational flow."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Both give you fine-tuned control over when motion is allowed to pass through a system. Combine them with gearshifts or complex timing setups for advanced contraptions."
+			]
+			hide_dependency_lines: true
+			icon: "create_connected:centrifugal_clutch"
+			id: "08601EC4FBF1FDE6"
+			rewards: [
+				{
+					id: "2EA85921756396D1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "36808A84D5F35949"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Logic in Motion"
+			tasks: [
+				{
+					id: "1C00FC20746B6FB0"
+					item: "create_connected:centrifugal_clutch"
+					type: "item"
+				}
+				{
+					id: "6033AFD423EC70B1"
+					item: "create_connected:freewheel_clutch"
+					type: "item"
+				}
+			]
+			title: "Conditional Clutches"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"These components reverse the standard Create logic... literally."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Inverted Clutch does the opposite of a normal clutch: it blocks motion when unpowered and allows it when powered."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Inverted Gearshift reverses the input rotation when unpowered and passes it through unchanged when powered"
+			]
+			hide_dependency_lines: true
+			icon: "create_connected:inverted_clutch"
+			id: "17D8B4529044C0AF"
+			rewards: [
+				{
+					id: "6F3AAF6F83BD93F4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B3E48C4EB8F464D"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Precision Machining"
+			tasks: [
+				{
+					id: "23F90604630D2538"
+					item: "create_connected:inverted_gearshift"
+					type: "item"
+				}
+				{
+					id: "3CEBDF73B68E222D"
+					item: "create_connected:inverted_clutch"
+					type: "item"
+				}
+			]
+			title: "Reverse Engineering"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"Some components need more than just rotation. They require a cogwheel input, not a simple shaft connection."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Crank Wheel and Large Crank Wheel are hand-powered cranks with cogwheels built in, allowing you to provide manual rotation where cog input is needed without adding extra gearing."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Encased Chain Cogwheel transmits power in a straight line like a regular chain drive but includes an embedded cogwheel. It’s perfect for powering machines like mixers and deployers that depend on cogwheel contact."
+			]
+			hide_dependency_lines: true
+			icon: "create_connected:crank_wheel"
+			id: "19B6CA64E44FE562"
+			rewards: [
+				{
+					id: "06969073F19BE2CE"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3F2DF97C97E4397F"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Spinning with Purpose"
+			tasks: [
+				{
+					id: "68EDEB78890882CF"
+					item: "create_connected:crank_wheel"
+					type: "item"
+				}
+				{
+					id: "26E9A56BF45D59B7"
+					item: "create_connected:large_crank_wheel"
+					type: "item"
+				}
+				{
+					id: "1432368C3D41E631"
+					item: "create_connected:encased_chain_cogwheel"
+					type: "item"
+				}
+			]
+			title: "Cogs in Motion"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"These advanced gearboxes let you control how rotation moves through your machines, down to the last shaft."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Parallel Gearbox redirects rotation around corners while maintaining the same direction. However, the straight-through path gets reversed, allowing for creative logic-based layouts."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The 6-Way Gearbox splits rotation to all six sides, but the top and bottom shafts spin at half speed. It's ideal for distributing power across multiple axes with built-in speed control."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Brass Gearbox offers full customizability. Right-click each face with an empty hand to toggle the rotation direction of each shaft. You choose exactly how power flows."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Cross Connector makes it possible to independently determine which direction your shafts are spinning. Useful when you want to cross shaft connections without changing rotation direction.  "
+			]
+			hide_dependency_lines: true
+			icon: "create_connected:parallel_gearbox"
+			id: "306A1976411C587B"
+			rewards: [
+				{
+					id: "42472A07518B0A83"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "02AF81C547C3132D"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Rotation, Your Way"
+			tasks: [
+				{
+					id: "5C16857179279112"
+					item: "create_connected:parallel_gearbox"
+					type: "item"
+				}
+				{
+					id: "37DDACB11E3181E0"
+					item: "create_connected:six_way_gearbox"
+					type: "item"
+				}
+				{
+					id: "1D61757FDADB04E3"
+					item: "create_connected:brass_gearbox"
+					type: "item"
+				}
+				{
+					id: "79F636EA40326C13"
+					item: "create_connected:cross_connector"
+					type: "item"
+				}
+			]
+			title: "Geared Logic"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"The Kinetic Bridge allows you to take the SU from one Stress Network and send it into an entirely separate Stress Network!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Check the Ponder for more information!"
+			]
+			hide_dependency_lines: true
+			id: "6A794F6B1C7ED64C"
+			rewards: [
+				{
+					id: "13CFDBF710F3E589"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "30FFCC5C25DBD740"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Separated Stress"
+			tasks: [{
+				id: "7AFDEAF617087162"
+				item: "create_connected:kinetic_bridge"
+				type: "item"
+			}]
+			title: "The Kinetic Bridge"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["769D1D5B36D849D2"]
+			description: [
+				"The Kinetic Battery allows you to take your Stress Units on the go! "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Check the Ponder for more information!"
+			]
+			hide_dependency_lines: true
+			id: "06AFE85347786AFF"
+			rewards: [
+				{
+					id: "7F74E8545025376D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "430C1BDA2325582D"
+					table_id: 6020190763011454986L
+					type: "random"
+				}
+			]
+			subtitle: "Stored Stress"
+			tasks: [{
+				id: "0EE30858E6288681"
+				item: "create_connected:kinetic_battery"
+				type: "item"
+			}]
+			title: "The Kinetic Battery"
+			x: 2.0d
+			y: -5.0d
+		}
+	]
+	title: "Create: Connected"
+}

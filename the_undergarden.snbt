@@ -1,0 +1,1217 @@
+{
+	autofocus_id: "6C4B93FE64BD418D"
+	default_hide_dependency_lines: false
+	default_quest_shape: "woodtier"
+	filename: "the_undergarden"
+	group: "52FA8429D8BF5933"
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/t_upper.png"
+		}
+	}
+	id: "4AF801B626E8118F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6C4B93FE64BD418D"]
+			description: ["Undergarden is a massive dimension mod filled with biomes (They're lowkey ugly) BUT worth exploring!"]
+			hide_dependent_lines: true
+			icon: "undergarden:goo_ball"
+			id: "1C232674CD04024D"
+			rewards: [{
+				id: "4611E0242FAB9CF3"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "irontier"
+			size: 1.25d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				dimension: "undergarden:undergarden"
+				id: "0F2860523070BF25"
+				title: "Visit undergarden"
+				type: "dimension"
+			}]
+			title: "Welcome to Undergarden!"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Big jungle in underground :O"]
+			icon: "undergarden:grongle_sapling"
+			id: "647A87E800C703C3"
+			rewards: [{
+				id: "2DBEE0D01E6A8995"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:gronglegrowth"
+				icon: "undergarden:grongle_sapling"
+				id: "7C9EF32C628CA0A8"
+				type: "biome"
+			}]
+			title: "Gronglegrowth"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["This nasty water is basically the ocean of undergarden."]
+			icon: "undergarden:glitterkelp"
+			id: "353AEEC116A5DEEF"
+			rewards: [{
+				id: "5429CC01B4971AD3"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:ancient_sea"
+				icon: "undergarden:glitterkelp"
+				id: "518049B7B94DEA7A"
+				type: "biome"
+			}]
+			title: "Ancient Sea"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Wiggle wiggle wiggle forest"]
+			icon: "undergarden:wigglewood_sapling"
+			id: "050D8480EE9D8E62"
+			rewards: [{
+				id: "6B757D1052B67B34"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:wigglewood_forest"
+				icon: "undergarden:wigglewood_sapling"
+				id: "7FFA960B8F3CC151"
+				type: "biome"
+			}]
+			title: "Wigglewood Forest"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Plains of the undergarden but with no trees?.."]
+			icon: "undergarden:depthrock_bricks"
+			id: "4E3D548E5D8D7D26"
+			rewards: [{
+				id: "7E7389D366197863"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			tasks: [{
+				biome: "undergarden:forgotten_field"
+				icon: "undergarden:depthrock_bricks"
+				id: "12E13E7D8732BC65"
+				type: "biome"
+			}]
+			title: "Forgotten Fields"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["These veils look like.. uhh."]
+			icon: "undergarden:veil_mushroom"
+			id: "7E3DA4168D352B42"
+			rewards: [{
+				id: "02C06AB42788957F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:veil_mushroom_bog"
+				icon: "undergarden:veil_mushroom"
+				id: "5F65CF932582E4D4"
+				type: "biome"
+			}]
+			title: "Veil mushroom bog"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Utheric can be mined but it also drops from rotten mobs too."]
+			id: "30582B5FBED35FD1"
+			rewards: [{
+				id: "758D76C7755819CB"
+				item: "undergarden:utherium_crystal"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "05F86B23702AD630"
+				item: "undergarden:utherium_crystal"
+				type: "item"
+			}]
+			title: "Utheric"
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: [
+				"They literally just reskinned minecraft ores at this point.."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Emerald to Regalium"
+			]
+			id: "3AF7446592D19FA6"
+			rewards: [{
+				count: 5
+				id: "2ACBFB0DDEE3BF54"
+				item: "undergarden:regalium_crystal"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "6C5AD33B8B69BEEC"
+				item: "undergarden:regalium_crystal"
+				type: "item"
+			}]
+			title: "Regalium"
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Forgotten ingots can only be obtained through catacombs."]
+			id: "4F5A2E2A5C7F4837"
+			rewards: [{
+				id: "228313ACC9720035"
+				item: "undergarden:forgotten_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "145F7277A6E82495"
+				item: "undergarden:forgotten_ingot"
+				type: "item"
+			}]
+			title: "Forgotten Ingot"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Can you guess where u can find them?"]
+			id: "51E2728C5E35A152"
+			rewards: [{
+				count: 2
+				id: "74FC609432923CAE"
+				item: "undergarden:froststeel_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "2F2F12FD80DAE684"
+				item: "undergarden:froststeel_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Basically iron but dirty. BUT stronger."]
+			id: "4141EF8B8C316118"
+			rewards: [{
+				count: 2
+				id: "58A82FCE900550AA"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "030173D7AE2E8AF7"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4141EF8B8C316118"]
+			description: ["Iron is better than this!"]
+			id: "130577AD1A1A8222"
+			rewards: [{
+				count: 4
+				id: "142964A7354A4C51"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "7F976851A2831B88"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "560EBAD803282FF4"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "616F19EE1582B025"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "000C3B46CCF0F9C6"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cloggrum Armor"
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4141EF8B8C316118"]
+			description: ["Classic iron tools."]
+			id: "16A04B2FC3F0D902"
+			rewards: [{
+				count: 4
+				id: "2D2BC753AF428A4B"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "5383BF974E6E6A96"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4C1CB1CD27DE1996"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3182842487B1ADC0"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3965E01BB5716714"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C8D488FB86260B2"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cloggrum Tools"
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4141EF8B8C316118"]
+			description: ["Cloggrum has a battleaxe too! that makes it better than iron i guess."]
+			id: "1E81B903137BB62A"
+			rewards: [{
+				count: 4
+				id: "13F796F5FD4B30A0"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "229BDF9C5EFF2F68"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_battleaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6FBB26ACF48BF73F"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cloggrum Tools"
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["51E2728C5E35A152"]
+			description: [
+				"Frosteel armor has slightly worse stats than diamond does BUT with a twist ofc, "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"you have a lot of knockback resistance AGAIN with a twist.. u are slowed down."
+			]
+			id: "7617737FC179EA1A"
+			rewards: [{
+				count: 4
+				id: "4CAED257664405F7"
+				item: "undergarden:froststeel_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "1F56436CFE9E4829"
+					item: {
+						Count: 1
+						id: "undergarden:froststeel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12D8CA0A44EF5EDD"
+					item: {
+						Count: 1
+						id: "undergarden:froststeel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F65FE9890B4283C"
+					item: {
+						Count: 1
+						id: "undergarden:froststeel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75672283B8F0C3CB"
+					item: {
+						Count: 1
+						id: "undergarden:froststeel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Frosteel Armor"
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["51E2728C5E35A152"]
+			description: [
+				"Frosteel tools slows down your enemies."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"not hoe though because its a HOE!!"
+			]
+			id: "46DCB235D3FEDA61"
+			rewards: [{
+				count: 4
+				id: "3DA2915B3BB46AEC"
+				item: "undergarden:froststeel_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "3B2ECE1F852193F6"
+					item: {
+						Count: 1
+						id: "undergarden:froststeel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "51B4AD7164660ED5"
+					item: {
+						Count: 1
+						id: "undergarden:froststeel_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D63C10C5B742431"
+					item: {
+						Count: 1
+						id: "undergarden:froststeel_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1A9A616D3CA79C35"
+					item: {
+						Count: 1
+						id: "undergarden:froststeel_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20016A6E5AF25B3C"
+					item: {
+						Count: 1
+						id: "undergarden:froststeel_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Frosteel Tools And Weapons"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30582B5FBED35FD1"]
+			description: [
+				"Hate the progress of base game? "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Have a netherite armor without a smithing template!"
+			]
+			id: "01B13BBB41BBB460"
+			rewards: [{
+				count: 4
+				id: "5B92118023C90ADD"
+				item: "undergarden:utherium_crystal"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "5C577BF2008DEA1C"
+					item: {
+						Count: 1
+						id: "undergarden:utherium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4DC0DCE680549B36"
+					item: {
+						Count: 1
+						id: "undergarden:utherium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0DBD340646246BCD"
+					item: {
+						Count: 1
+						id: "undergarden:utherium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "192C931FBF39387C"
+					item: {
+						Count: 1
+						id: "undergarden:utherium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Utherium Armor"
+			x: -2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["30582B5FBED35FD1"]
+			description: ["Same as diamond tools but u deal more damage to rotten mobs!"]
+			id: "1FCF946B7BE3C0BD"
+			rewards: [{
+				count: 4
+				id: "024E32DD5FCCA5C8"
+				item: "undergarden:utherium_crystal"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "749B1D631FC31987"
+					item: {
+						Count: 1
+						id: "undergarden:utherium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53F2440C55033418"
+					item: {
+						Count: 1
+						id: "undergarden:utherium_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "71B98C882B804619"
+					item: {
+						Count: 1
+						id: "undergarden:utherium_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "656B4889C4C1A4F0"
+					item: {
+						Count: 1
+						id: "undergarden:utherium_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4542D7CA0F4097B8"
+					item: {
+						Count: 1
+						id: "undergarden:utherium_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Utheric Tools"
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4F5A2E2A5C7F4837"]
+			description: [
+				"Cloggrum can be upgraded to forgotten."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Forgotten tools have built-in efficieny for the undergarden blocks only."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"and they deal more damage to them too! (not rotten beasts)"
+			]
+			id: "6124C0E9E419694B"
+			rewards: [{
+				id: "5D5504B9CD6842AA"
+				item: "undergarden:forgotten_ingot"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "2C7066FECE927691"
+					item: {
+						Count: 1
+						id: "undergarden:forgotten_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "170BED42A6861142"
+					item: {
+						Count: 1
+						id: "undergarden:forgotten_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "322FDB79D946CFC6"
+					item: {
+						Count: 1
+						id: "undergarden:forgotten_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0706A577127686BD"
+					item: {
+						Count: 1
+						id: "undergarden:forgotten_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "08F28AD831730B2D"
+					item: {
+						Count: 1
+						id: "undergarden:forgotten_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Forgotten Tools"
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4F5A2E2A5C7F4837"]
+			description: ["This greataxe with knockback II is fun."]
+			id: "0D91A6B36BD2F526"
+			rewards: [{
+				id: "5C97016990826793"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "5E0BED0B76D91B6F"
+				item: {
+					Count: 1
+					id: "undergarden:forgotten_battleaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Axe of the legends"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Barren and bleak."]
+			icon: "undergarden:depthrock"
+			id: "36389696767EFB4E"
+			rewards: [{
+				id: "4B4FBFCCB070EB30"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			tasks: [{
+				biome: "undergarden:barren_abyss"
+				icon: "undergarden:depthrock"
+				id: "7F8993963938570B"
+				type: "biome"
+			}]
+			title: "Barren Abyss"
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Big bloody fockin moshrooms mate"]
+			icon: "undergarden:blood_mushroom"
+			id: "06D13E319C26C949"
+			rewards: [{
+				id: "4A2FBB3EACE3F1BF"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:blood_mushroom_bog"
+				icon: "undergarden:blood_mushroom"
+				id: "19FD2A6FBA7368C4"
+				type: "biome"
+			}]
+			title: "Blood Mushroom Bog"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Basically a deadsea. No kelps no live nun!"]
+			icon: "undergarden:sediment"
+			id: "1BAE1519E44E40CE"
+			rewards: [{
+				id: "0214A47335438F7E"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			tasks: [{
+				biome: "undergarden:dead_sea"
+				icon: "undergarden:sediment"
+				id: "01BCE3270B3EEDA9"
+				type: "biome"
+			}]
+			title: "Dead Sea"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Name says it all."]
+			icon: "undergarden:deepturf_block"
+			id: "15A8F04BC10E619E"
+			rewards: [{
+				id: "12D1A6BD7DB7E1DE"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			tasks: [{
+				biome: "undergarden:dense_forest"
+				icon: "undergarden:deepturf_block"
+				id: "4AA288827E383289"
+				type: "biome"
+			}]
+			title: "Dense Forest"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["One of the cold biomes of the undergarden. Filled with lots of icesicles!"]
+			icon: "minecraft:snow_block"
+			id: "1E13D7CE5A9EFF74"
+			rewards: [{
+				id: "196AF64340C2D7B6"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:frostfields"
+				icon: "minecraft:snow_block"
+				id: "38C521FBA84E18B7"
+				type: "biome"
+			}]
+			title: "Frostfields"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["A neighbor to the frostfields, has trees!"]
+			icon: "undergarden:frozen_deepturf_block"
+			id: "0C98503A2F20484D"
+			rewards: [{
+				id: "0957C1372A07536B"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:frosty_smogstem_forest"
+				icon: "undergarden:frozen_deepturf_block"
+				id: "7425F62E6014D327"
+				type: "biome"
+			}]
+			title: "Frosty Smogstem Forest"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Shrinking balls while entering this sea "]
+			icon: "minecraft:packed_ice"
+			id: "073BA8470EA37A00"
+			rewards: [{
+				id: "603CBB78679E2DE9"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:icy_sea"
+				icon: "minecraft:packed_ice"
+				id: "13998128201A3AD4"
+				type: "biome"
+			}]
+			title: "Icy Sea"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Again a mushroom biome! with no blood this time."]
+			icon: "undergarden:indigo_mushroom"
+			id: "0A0A991BAC99092C"
+			rewards: [{
+				id: "6D3D8B1115168801"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:indigo_mushroom_bog"
+				icon: "undergarden:indigo_mushroom"
+				id: "3CCDB2BDBD680158"
+				type: "biome"
+			}]
+			title: "Indigo Mushroom Bog"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["An another mushroom biome with beautiful purple mushrooms!"]
+			icon: "undergarden:ink_mushroom"
+			id: "278D34BBC13356DF"
+			rewards: [{
+				id: "404CE4FF92D35505"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:ink_mushroom_bog"
+				icon: "undergarden:ink_mushroom"
+				id: "2489A0C2542332E1"
+				type: "biome"
+			}]
+			title: "Ink mushroom Bog"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Berries berries but dangerous."]
+			icon: "undergarden:smog_vent"
+			id: "511144EF336BFAF5"
+			rewards: [{
+				id: "5A53B26A5A61E77D"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			tasks: [{
+				biome: "undergarden:smog_spires"
+				icon: "undergarden:smog_vent"
+				id: "283BFDA10C3530EC"
+				type: "biome"
+			}]
+			title: "Smog Spires"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["Mushrooms and trees together."]
+			icon: "undergarden:smogstem_sapling"
+			id: "43FD4AEBB9548E57"
+			rewards: [{
+				id: "4EA712B69725CCF4"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				biome: "undergarden:smogstem_forest"
+				icon: "undergarden:smogstem_sapling"
+				id: "44D8BAEAA4D0CA1D"
+				type: "biome"
+			}]
+			title: "Smogstem Forest"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: [
+				"Drops by forgottens. "
+				""
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				""
+				"uhh where's the boots?"
+			]
+			id: "49EB9FB2133E3219"
+			rewards: [{
+				id: "6BC63C8EB24B2DED"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "7A0DABDDF01D5423"
+					item: {
+						Count: 1
+						id: "undergarden:ancient_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C172CE16BBA49F2"
+					item: {
+						Count: 1
+						id: "undergarden:ancient_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29675CA8C6EACF13"
+					item: {
+						Count: 1
+						id: "undergarden:ancient_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ancient Armor"
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			description: [
+				"In order to enter the Undergarden, you have to create a portal just like nether but with stone bricks!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Instead of lighting it up with a lighter, we need something else, a catalyst!"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/info"
+				}
+			}
+			id: "6C4B93FE64BD418D"
+			rewards: [{
+				id: "5E5FBCE2B7C30700"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "goldtier"
+			size: 1.5d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "6582E66B9320B94B"
+					item: "undergarden:catalyst"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "339902AD75FABFF0"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+			]
+			title: "How to go to undergarden?"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: [
+				"Slingshot is a very fun weapon added by Undergarden. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"&nIt has 4 Ammo that can be shot:&r"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Scintling Goo can be fired and when it hits a Mob it'll give them the Gooey Effect."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Depthrocks are just normal projectiles."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Rotten Blisterberries will blow up on impact."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"And Gronglets don't do any damage they just make noise and get shot!"
+			]
+			id: "1190BB433EFA3945"
+			rewards: [{
+				count: 5
+				id: "250BD4197B2AB64B"
+				item: "undergarden:rotten_blisterberry"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "5C5E12080C612D23"
+				item: {
+					Count: 1
+					id: "undergarden:slingshot"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1C232674CD04024D"]
+			description: ["With blisterbombs you can craft a boomgourd!"]
+			id: "5E63C78CDC44FF95"
+			rewards: [{
+				count: 5
+				id: "47A34F25F9C3DE31"
+				item: "undergarden:blisterbomb"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "245333BAF2116325"
+					item: "undergarden:blisterbomb"
+					type: "item"
+				}
+				{
+					id: "027921BB67B819C7"
+					item: "undergarden:boomgourd"
+					type: "item"
+				}
+			]
+			title: "Explosives"
+			x: 2.5d
+			y: 8.0d
+		}
+	]
+	title: "The Undergarden"
+}

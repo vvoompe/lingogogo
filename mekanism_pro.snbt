@@ -1,0 +1,1538 @@
+{
+	autofocus_id: "24174700F7FB771C"
+	default_hide_dependency_lines: false
+	default_quest_shape: "netheritetier"
+	filename: "mekanism_pro"
+	group: "3C6437AAADAFC5CB"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/m_upper.png"
+		}
+	}
+	id: "1608F5BC7B90120F"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["24174700F7FB771C"]
+			description: [
+				"To start our journey into the world of Mekanism Reactors, we'll start by making a Fission Reactor&r. These are multiblock structures that generate massive amounts of heat by burning Fissile Fuel&r. This reactor does not produce power on its own, but the heat generated can be used to heat Coolant&r to be used to generate power in an Industrial Turbine&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Fission Reactor can be very dangerous, as a meltdown can cause an explosion&r as well as Radiation&r spreading over a 5 chunk radius, which lasts for several in-game weeks."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"But we're going to be prepared for that. Let's make a Hazmat Suit, just in case... right?"
+			]
+			id: "36B1995B495AA674"
+			min_width: 350
+			rewards: [{
+				id: "6D8B557D90A02403"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "Radiation Protection"
+			tasks: [
+				{
+					id: "14BF9ADCB8F43ADC"
+					item: "mekanism:hazmat_mask"
+					type: "item"
+				}
+				{
+					id: "0B06DCC5BA15895E"
+					item: "mekanism:hazmat_gown"
+					type: "item"
+				}
+				{
+					id: "1F43C3AE8239B716"
+					item: "mekanism:hazmat_pants"
+					type: "item"
+				}
+				{
+					id: "68B050A8CDCDCD10"
+					item: "mekanism:hazmat_boots"
+					type: "item"
+				}
+			]
+			title: "Hazmat Protection"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["36B1995B495AA674"]
+			description: [
+				"It's time to gather the materials we'll need to build the reactor."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Just like most Mekanism multiblocks, reactors can be a custom size depending on your needs. They must be cuboid, with the minimum outside size being 3 wide, 4 tall, and 3 blocks deep. The maximum size is 18x18x18. We're going to build a 5x5 to start with&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The edges of the outer shell must&r be made out ofFission Reactor Casings&r, while the faces can be either casings or Reactor Glass&r, Reactor Ports, or Reactor Logic Adapters. We'll get to those later."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For now, let's build a basic 5x5x5 Fission Reactor!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Need more help building it? Holding ''W'' while hovering over the Fission Reactor Casing will show you the Ponder that can help you build it."
+			]
+			hide_until_deps_visible: false
+			id: "1482F2D45E8F761D"
+			min_width: 300
+			rewards: [{
+				id: "0792BEFF2D7C604C"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "netheritetier"
+			subtitle: "Casing and Glasses"
+			tasks: [
+				{
+					count: 44L
+					id: "19447D5D621A8D89"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					count: 50L
+					id: "0765AB709CC3C6E2"
+					item: "mekanismgenerators:reactor_glass"
+					type: "item"
+				}
+			]
+			title: "Building The Basics Of The Reactor"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1482F2D45E8F761D"]
+			description: [
+				"For us to take anything in or out of the Fission Reactor, we'll need Fission Reactor Ports&r. These can be configured to input or output by using the Configurator&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Every Fission Reactor needs a minimum of 4 Ports&r:"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"1 Coolant Input"
+				"1 Coolant Output"
+				"1 Fissile Fuel Input"
+				"1 Waste Output"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For this starter build, let's put a port on each side like the image shown below. Make sure to configure them to match the list of inputs and outputs!"
+			]
+			id: "0696B725E840B996"
+			min_width: 400
+			rewards: [{
+				id: "11FABC06766669F5"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				count: 4L
+				id: "057CDA5BC0C5F774"
+				item: "mekanismgenerators:fission_reactor_port"
+				type: "item"
+			}]
+			title: "Interacting with The Reactor"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1482F2D45E8F761D"]
+			description: [
+				"Afraid of blowing up your Fission Reactor and causing a massive Radiation leak? Don't worry, we all are."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"So how can we prevent such a catastrophic disaster? "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"By creating a redstone Circuit Breaker&r using Fission Reactor Logic Adapters&r. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Now these aren't 100% guaranteed to stop an explosion, but they are absolutely nice to have."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Essentially, these Adapters allow us to control the Reactor using Redstone&r. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"With just one, you can use a lever to turn on and off the reactor. However, we're going to use them for damage control."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You can also set these to give off a Redstone Signal based on a certain condition within the Reactor, like Damage Critical&r or Insufficient Fuel&r. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"This is useful for setting up a circuit breaker to shut off the Reactor if those ever happen."
+			]
+			id: "5FDB48511EC1C580"
+			min_width: 300
+			rewards: [{
+				id: "2E5FE4E46429A82D"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "HOW TO SAVE HELP"
+			tasks: [{
+				id: "16B10EA105CCC1D3"
+				item: "mekanismgenerators:fission_reactor_logic_adapter"
+				type: "item"
+			}]
+			title: "Reactor Failure "
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1482F2D45E8F761D"]
+			description: [
+				"The inside of the reactor is built up of pillars using several Fission Fuel Assembly&r blocks, with a single Control Rod Assembly&r placed at the top of each pillar. These can be anywhere from 1 to 15 blocks in height, depending on the size of the reactor."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For this build, we'll put 2 of the Fission Fuel Assemblies in the center of our multiblock, and then put the Control Rod Assembly right on top of it."
+			]
+			id: "3F5010269469EBE0"
+			min_width: 250
+			rewards: [{
+				id: "6819DA9F73BA383C"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					count: 2L
+					id: "032045BB026F44B3"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					id: "0875D821930A348A"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+			]
+			title: "Fuel Controlling"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5FDB48511EC1C580"]
+			description: [
+				"Using some vanilla mechanics and a Fission Reactor Logic Adapters&r, we can create a simple circuit breaker to trip and turn off the reactor in case things get a little crazy&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"To do this, we'll need a single piece of Redstone, a Piston, a block of either sand or gravel, and an Observer."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"On one of the faces, we'll want to put a Logic Adapter down, then skip a block above it and then place another Adapter. Set the top Adapter to \"Activation, and the bottom Adapter to \"Damage Critical\"."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Next, in front and underneath the bottom Adapter, place any building block and stick a piece of Redstone on it leading from the Adapter. We'll then place a Piston facing up in front of that Redstone, then place our piece of sand or gravel on that Piston."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For the final part of our breaker, place the Observer with the face pointing outwards towards the Piston setup. This is important&r!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Whenever the Reactor has critical damage, it will then activate the bottom Adapter, causing the redstone to get a signal, which then activates the Piston and pushes up the Gravel/Sand. This will activate the Observer, which then turns off the Reactor."
+			]
+			icon: "minecraft:observer"
+			id: "7B0764DDE94E73D0"
+			min_width: 500
+			rewards: [{
+				id: "102A352650624E7C"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "I felt bad for u.. so here!"
+			tasks: [
+				{
+					count: 2L
+					id: "25FB07BDEC8EE4EF"
+					item: "mekanismgenerators:fission_reactor_logic_adapter"
+					type: "item"
+				}
+				{
+					id: "6F57410F914C4D07"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "5BC88AE46F95774D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:gravel"
+								}
+								{
+									Count: 1b
+									id: "minecraft:sand"
+								}
+							]
+						}
+					}
+					title: "Gravel and sand "
+					type: "item"
+				}
+				{
+					id: "584B8A392FBCD199"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					id: "139EDEDEA3DAD312"
+					item: "minecraft:observer"
+					type: "item"
+				}
+			]
+			title: "Circuit Breaker"
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1DE8B0C9A7195720"]
+			description: [
+				"When burning fuel, the Fission Reactor creates a massive amount of heat. To prevent the Reactor from converting into TNT, we need to make sure it is properly cooled."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Easiest way of cooling down a reactor is using &nwater!&r"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Pump out the water into one of the Reactor's Ports that is set to &ninput&r to fill up the Reactor with water. This will be heated while the Reactor is running and get converted to Steam&r, which you can use to create power within an Industrial Turbine&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"&nNote: &r"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Sodium can also be used as a much more efficient coolant. This allows for higher burn rates and lower core temperatures!"
+			]
+			id: "2B76B2F18C2C47D2"
+			min_width: 300
+			rewards: [
+				{
+					id: "1E2809FAFCF0A292"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "573EC47D2235DA05"
+					type: "loot"
+				}
+			]
+			subtitle: "We don't wanna explode right?"
+			tasks: [{
+				id: "7E89D2B289EA8C8C"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "Cooling The Reactor"
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"0696B725E840B996"
+				"3F5010269469EBE0"
+			]
+			description: [
+				"Once you've finished placing in all of the required blocks to build the Reactor, it should give off red particles to show that it is complete."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Right clicking anywhere on the Reactor will open up the Interface&r. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"This will have all of the information you need to run the Reactor properly, as well as two buttons to turn on and off the Reactor."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"On the left, you have 2 tanks: "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"One for Coolant&r and one for Fissile Fuel&r. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"On the right, you have one for Nuclear Waste&r, and one for Heated Coolant&r, which will most likely be Steam&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Temperature&r bar will show you how hot the Reactor is. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"After a certain temp, the Reactor will start taking Damage&r, which will eventually cause the Reactor to explode."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"To adjust the Burn Rate&r of the Fissile Fuel and see more statistics, click on the (I) tab on the left side. Here, you can adjust the Rate Limit, which controls how much fuel the Reactor burns per tick!"
+			]
+			icon: "mekanism:geiger_counter"
+			id: "1DE8B0C9A7195720"
+			min_width: 500
+			rewards: [
+				{
+					id: "08BFEE4DB82A488D"
+					type: "xp"
+					xp: 250
+				}
+				{
+					exclude_from_claim_all: true
+					id: "24535A9B5B195CDB"
+					type: "loot"
+				}
+			]
+			size: 1.0d
+			subtitle: "What am i looking at."
+			tasks: [{
+				id: "151024BDAA90EA7B"
+				title: "Fission Reactor Interface"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3B81800EE6E77EF2"]
+			description: ["Let's gather some Uranium Ingots. We'll need to process these in an Enrichment Chamber&r to turn it into Yellow Cake Uranium."]
+			icon: "mekanism:yellow_cake_uranium"
+			id: "7E17AB5A4492929E"
+			rewards: [{
+				id: "48CC9D36035B2625"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "goldtier"
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "5641530385DCA6A7"
+					item: "alltheores:uranium_ingot"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1C72C0C59D65B1D0"
+					item: "mekanism:yellow_cake_uranium"
+					type: "item"
+				}
+			]
+			title: "Uranium"
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7E17AB5A4492929E"]
+			description: ["Once we have our hands on Yellow Cake Uranium&r, we can send it through a Chemical Oxidizer&r to create the gas, Uranium Oxide&r."]
+			id: "3AF4E5D4839CEF8B"
+			rewards: [{
+				id: "147637FB74512198"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "772EA844FE7C1B74"
+				item: "mekanism:chemical_oxidizer"
+				type: "item"
+			}]
+			title: "Uranium Oxide"
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7E4A95B6443F23BC"]
+			description: [
+				"As a recap, we've set up an advanced Ore Processing facility using several gases, machinery, and more."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"In this chapter, we'll be using more of those to create powerful multiblock Reactors&r, as well as advanced ways to create and store power."
+			]
+			icon: "mekanismgenerators:fusion_reactor_port"
+			id: "24174700F7FB771C"
+			min_width: 300
+			rewards: [{
+				id: "73F5CE911AC4474C"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "3153288DCE1C4FEF"
+				title: "Advanced Mekanism"
+				type: "checkmark"
+			}]
+			title: "Advanced &dMekanism"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1DE8B0C9A7195720"]
+			description: [
+				"The Fission Reactor needs Fissile Fuel to run. If you look up Fissile Fuel right now in JEI, you will get confused. (probably) so let's go step by step!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"It all boils down to creating Uranium Hexafluoride&r. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"To do this, let's focus on making these two gases: &nHydrofluoric Acid&r, and &nUranium Oxide&r."
+			]
+			icon: "mekanism:reprocessed_fissile_fragment"
+			id: "3B81800EE6E77EF2"
+			rewards: [{
+				id: "21A507B60A7721B0"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "382818E289EC83A6"
+				title: "AIGHT MAN"
+				type: "checkmark"
+			}]
+			title: "Production of Fissile Fuel"
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3B81800EE6E77EF2"]
+			description: ["Let's take our Sulfuric Acid&r and combine it with Fluorite&r in a Chemical Dissolution Chamber&r to make Hydrofluoric Acid&r."]
+			id: "187A3F5B41D1C923"
+			rewards: [{
+				id: "5AEF7913046DC6FB"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "3A5FB51FB9B65990"
+					item: "mekanism:fluorite_gem"
+					type: "item"
+				}
+				{
+					id: "2091F0A297A1A3C9"
+					item: "mekanism:chemical_dissolution_chamber"
+					type: "item"
+				}
+			]
+			title: "Hydrofluoric Acid"
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"187A3F5B41D1C923"
+				"3AF4E5D4839CEF8B"
+			]
+			description: ["Using another Chemical Infuser&r, we want to combine our Hydrofluoric Acid with Uranium Oxide to make Uranium Hexafluoride."]
+			id: "3663E93E169EF8E3"
+			rewards: [{
+				id: "1AA24CF536807D83"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "73C5F4AC41EE5123"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			title: "Uranium Hexafluoride"
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3663E93E169EF8E3"]
+			description: ["Once we have an Isotopic Centrifuge&r, we can run our Uranium Hexafluoride&r in and create Fissile Fuel&r!"]
+			icon: "mekanism:isotopic_centrifuge"
+			id: "16A6C47E35F3B9D0"
+			rewards: [{
+				id: "04AA88C4D9B33E34"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "3F2371FD486D4F0E"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
+			title: "Fissile Fuel"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3FFF9018DA2A2763"]
+			description: [
+				"Dont Forget These Before Booting The Reactor!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"1. Have a Hazmat Suit on."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"2. Water pumping into an input Port."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"3. Fissile Fuel pumping into an input Port."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"4. A Port set to output the Heated Coolant, to an Industrial Turbine maybe?"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"5. A Port set to output Nuclear Waste leading to Radioactive Waste Barrels or machines to process it."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Now Turn That Thing on! "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You can also adjust the Burn Rate to produce more Nuclear Waste, but start slow."
+			]
+			icon: "mekanismgenerators:fission_reactor_casing"
+			id: "3591EAA8E397F992"
+			min_width: 300
+			rewards: [{
+				id: "5AC458A8C3D99B74"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "27709080B4B77B09"
+				title: "Okay i am redyy!"
+				type: "checkmark"
+			}]
+			title: "Booting Up The Reactor"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["16A6C47E35F3B9D0"]
+			description: [
+				"Once we start burning up Fissile Fuel in the reactor, we'll get heated Coolant and Nuclear Waste."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"This is where the Radiation kicks in. As long as it stays safely in some container or machine, you won't have any spills....right?"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The best way to store any Radioactive substance is using a Radioactive Waste Barrel . These will safely store the waste, while slowly decaying the gas without causing a Radiation spill. You don't want your Nuclear Waste sitting in your Reactor as it causes it to produce more heat, so set a port to output Waste and ship it to a barrel!."
+			]
+			id: "3FFF9018DA2A2763"
+			min_width: 300
+			rewards: [{
+				id: "1EEAAB174D95E4B6"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				count: 3L
+				id: "45EC7D8BA0CCFB07"
+				item: "mekanism:radioactive_waste_barrel"
+				type: "item"
+			}]
+			title: "Dealing with Nuclear Waste"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3591EAA8E397F992"]
+			description: [
+				"Nuclear Wastes can be sent into an Isotopic Centrifuge to create Plutonium."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Sending the Plutonium into a Pressurized Reaction Chamber with some water and Fluorite Dust will give you Plutonium Pellets. These are used to make end game materials!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Note: This will also create a byproduct of Spent Nuclear Waste, which needs to be pumped into a Waste Barrel for storage."
+			]
+			id: "2E9FC7DC2AC6FD8E"
+			rewards: [{
+				id: "353657D187263DAA"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "6B40312EE7C8875D"
+				item: "mekanism:pellet_plutonium"
+				type: "item"
+			}]
+			title: "A Plutonium Pellet"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3591EAA8E397F992"]
+			description: [
+				"Pumping Nuclear Waste into a Solar Neutron Activator will give you Polonium."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Run the Polonium through a Pressurized Reaction Chamber with some Fluorite Dust and you'll get Polonium Pellets. You will need a good bit of these for the future!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Note: This will also create a byproduct of Spent Nuclear Waste, which needs to be pumped into a Waste Barrel for storage."
+			]
+			id: "1FAAF8216CDC3AC6"
+			rewards: [{
+				id: "316FC7C98CC22E11"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "38A344B697C93B3B"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			title: "A Polonium Pellet"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2E9FC7DC2AC6FD8E"
+				"1FAAF8216CDC3AC6"
+			]
+			description: [
+				"The Supercritical Phase Shifter (SPS for short) is another multiblock structure used to infuse Polonium with large amounts of power to create Antimatter&r gas, which can be crystallized into pellets."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"To build the SPS, you'll need to make a total of 72 SPS Casings&r (60 for the build, 12 to make the ports), 3 SPS Ports&r, 122 Reactor Glass, and one other item we'll talk about in the next quest. Let's get the materials first!"
+			]
+			id: "068728DE3B9B13C3"
+			rewards: [
+				{
+					id: "34DCA3CB7F03E0E4"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+				{
+					id: "7805E5E238BB92F1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					count: 60L
+					id: "63C9D54A0F55BA9B"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					count: 122L
+					id: "6236D6215419A2EF"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "769C396EE20CD89D"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+			]
+			title: "SPS = Super Critical Phase Shifter"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1FAAF8216CDC3AC6"]
+			description: [
+				"You've probably heard people talk about how the Fusion Reactor&r is the best power source in the pack. They are right."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Once activated, the Reactor can push out up to 200MRF/t with the right setup. It can also be cooled with water to produce steam, which can go into anIndustrial Turbine&r to make even more power."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"To build the Fusion Reactor, we need to follow a simple pattern. Each face will look like this:"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For the top, we want to replace the middle block with the Fusion Reactor Controller."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For the ports, you can replace any of the Reactor Glass on the sides. For this setup, we'll need two ports to input Deuterium&r and Tritium&r, then a port to output power."
+			]
+			id: "0152C49AB74B9D32"
+			min_width: 500
+			rewards: [{
+				id: "73F01F26D46493C6"
+				type: "xp"
+				xp: 100
+			}]
+			size: 1.25d
+			subtitle: "Super Power Source"
+			tasks: [
+				{
+					id: "4005EDF7A97FD97D"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "6E680D259F45AF80"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "2369D4585A3BDCCC"
+					item: "mekanismgenerators:fusion_reactor_port"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "554C67BA24832AB4"
+					item: "mekanismgenerators:reactor_glass"
+					type: "item"
+				}
+			]
+			title: "Fusion Reactor"
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["068728DE3B9B13C3"]
+			description: [
+				"The Supercharged Coil is placed on an &nSPS&r Port in the center of two faces, "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"When given power, these will supercharge Polonium into Antimatter. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Only 1 is required, but you can use 2 if you want."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"To produce 1mb of Antimatter, you need 400MRF. If you haven't started making a Fusion Reactor&r, now's a good time to make it!"
+			]
+			id: "2331FCDD2F2B709A"
+			min_width: 300
+			rewards: [
+				{
+					id: "7BC5630B6210C074"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+				{
+					id: "3C4D31DF8C934DC9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "48A70F1D73DE5E37"
+				item: "mekanism:supercharged_coil"
+				type: "item"
+			}]
+			title: "Supercharged Coils"
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2331FCDD2F2B709A"]
+			description: [
+				"With all of the gathered blocks, it's time to build SPS. Below u can try to understand, or you can watch the Ponder."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The SPS will be 7x7 when built, but it isn't a cube."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Supercharged Coils should be placed across from each other in the center of their respective sides, and the remaining two ports will be used to pump in Polonium, and pump out Antimatter Gas."
+			]
+			id: "2B3F2F470E06BC40"
+			min_width: 350
+			rewards: [{
+				id: "7D3868B320D82382"
+				type: "xp"
+				xp: 250
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "075949772F067ACE"
+				item: "mekanism:sps_casing"
+				type: "item"
+			}]
+			title: "SPS"
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2B3F2F470E06BC40"]
+			description: [
+				"Now that we have some experience working with more advanced machinery, right? "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"it's time to move towards making Antimatter Pellets!"
+			]
+			id: "00EFC7B327E79076"
+			rewards: [{
+				id: "377C6F58639E8469"
+				type: "xp"
+				xp: 1000
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "3B83170BC4E75158"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["79757F66DF263FA0"]
+			description: [
+				"To see a visual, check out the Ponder by holding ''W'' while hovering over the Laser Focus Matrix."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The goal is to aim each Laser into a Laser Amplifier. Using one is pretty slow, so we're going to make a few."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"In the image below, you can see an example of how this is set up. Sticking the Lasers directly on a power source like an Energy Cube works, or you can have them on pipes or cables. You want to give it a block of empty space between the lasers and the Laser Amplifier."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Laser Amplifier has a red dot on one of the faces. This is what you want to point towards the Laser Focus Matrix."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Make sure to turn the Laser Amplifier off (or activate Redstone control) and wait for it to store at least 400MRF&r, then it'll be ready."
+			]
+			id: "320CC038A64A3195"
+			min_width: 400
+			rewards: [{
+				id: "1D08E38CECF7C7E8"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "1F82E1E037CBDC34"
+					item: "mekanism:laser_amplifier"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "64C66199BBFDF908"
+					item: "mekanism:laser"
+					type: "item"
+				}
+			]
+			title: "Laser Focus"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12D271359D48210E"]
+			description: ["By now, you're already making Lithium&r. Pump that into a Solar Neutron Activator to create Tritium&r."]
+			id: "57534FA0E09C4975"
+			rewards: [{
+				id: "464CDFABB1935067"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "6C40D1088C211675"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			title: "Tritium"
+			x: 11.488095238095248d
+			y: -3.30952380952381d
+		}
+		{
+			dependencies: ["12D271359D48210E"]
+			description: [
+				"To fuel our Fusion Reactor, we'll need to create two different gases, this one being Deuterium&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"To make this, we'll need to make some Electric Pumps and give them a Filter Upgrade. Place them over a source block of water, give them some power, and they'll pump out Heavy Water&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Pump the Heavy Water into an Electrolytic Separator to get Deuterium&r."
+			]
+			icon: "mekanism:electric_pump"
+			id: "4ABF0727AA569DD9"
+			rewards: [{
+				id: "5A40C3DB56EDA0E3"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "34228001011C4524"
+					item: "mekanism:electric_pump"
+					type: "item"
+				}
+				{
+					id: "1C627F3894C50E4E"
+					item: "mekanism:upgrade_filter"
+					type: "item"
+				}
+			]
+			title: "Deuterium"
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"57534FA0E09C4975"
+				"4ABF0727AA569DD9"
+			]
+			description: [
+				"To kick start the Fusion Reactor, we'll need a quick shot of D-T fuel. This is made by combining Deuterium&r and Tritium&r together in a Chemical Infuser."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Start by making a Hohlraum&r and place it into the Infuser (where the plus symbol is) to fill it with D-T fuel. Now we're ready to jumpstart the Reactor!"
+			]
+			id: "3593D955361B0C6D"
+			rewards: [{
+				id: "2FBAF9E2B19C1A6F"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "789B4C8031BCDBDA"
+				item: "mekanismgenerators:hohlraum"
+				type: "item"
+			}]
+			title: "Fuel Injector"
+			x: 13.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0152C49AB74B9D32"]
+			description: [
+				"To create a reaction for the Reactor to turn on, we're going to need to inject it with a ton of power. And I mean a ton of power&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"This requires you to set up several Lasers&r that all need to be powered, then shooting 400MFE directly into the Laser Focus Matrix."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Laser Focus Matrix is placed in the center of one face of the Fusion Reactor. We'll build the Lasers next."
+			]
+			icon: "mekanism:laser"
+			id: "79757F66DF263FA0"
+			min_width: 300
+			rewards: [{
+				id: "27476AD1A921D6BC"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "5799CEC4031D454E"
+				item: "mekanismgenerators:laser_focus_matrix"
+				type: "item"
+			}]
+			title: "Laser Beam"
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0152C49AB74B9D32"]
+			description: [
+				"Fusion Reactors require a very special fuel: D-T Fuel to be exact."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"There are two ways to fuel the Reactor: Either by pumping in D-T Fuel directly into the Reactor at 1,000mb/t, or by pumping each of the two fuels in separately at controlled rates."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For starters, let's pump them in separately. We probably need to know how to make them as well."
+			]
+			icon: "mekanismgenerators:fusion_fuel_bucket"
+			id: "12D271359D48210E"
+			rewards: [{
+				id: "771198694F018CFC"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "2A6E713A062510B6"
+				title: "I got this"
+				type: "checkmark"
+			}]
+			title: "Fueling "
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"320CC038A64A3195"
+				"3593D955361B0C6D"
+			]
+			description: [
+				"Did u fill Hohlarum with D-T Fuel?"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Deuterium and Tritium ready to be pumped into the Reactor?"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"A Laser Amplifier with at least 400MRF ready to shoot into the Laser Focus Matrix?"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Once you are ready, place the Hohlraum into the Fusion Reactor Controller, pump in the Fuel, then activate your Laser Amplifier."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"If done right, you are fine! "
+			]
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			id: "54D8B9CB3F98040F"
+			min_width: 300
+			rewards: [{
+				id: "66CC79AB269C93AC"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "netheritetier"
+			size: 1.2d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "4B63979C49A34565"
+				item: {
+					Count: 1
+					id: "mekanismgenerators:hohlraum"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 10L
+									gasName: "mekanismgenerators:fusion_fuel"
+								}
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Let's confirm things.."
+			x: 12.94523809523811d
+			y: -0.25238095238095326d
+		}
+		{
+			dependencies: ["54D8B9CB3F98040F"]
+			description: [
+				"The Fusion Reactor&r can produce up to 200MRF/t on its own, but first we need to understand some mechanics."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The easiest way to produce power is by pumping in Deuterium and Tritium separately, then controlling how much fuel is burned using the Injection Rate in the Fuel Tab&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"This has to be an even number with a max of 98, as it combines the D-T fuel inside of the Reactor itself. The consumption of each fuel is equal to half of the Injection Rate per tick, meaning 49mb/t of each for the max."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"However, you can directly inject D-T Fuel&r, but will not be able to control the Injection Rate. This will create massive amounts of power per tick, but at a much higher fuel consumption rate of 500mb/t of each fuel."
+			]
+			id: "26D306418545A2D6"
+			min_width: 300
+			rewards: [
+				{
+					id: "3D24F967DBB74D71"
+					item: "mekanism:ultimate_induction_cell"
+					type: "item"
+				}
+				{
+					id: "5FAD66DBACDEA6ED"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "1EEEE30BA51757D6"
+				max_input: 1000L
+				title: "Holy shit!"
+				type: "forge_energy"
+				value: 50000000L
+			}]
+			title: "The Best Power Source!"
+			x: 14.116666666666674d
+			y: 1.0047619047619065d
+		}
+		{
+			dependencies: ["3FFF9018DA2A2763"]
+			description: [
+				"The Industrial Turbine&r is a massive multiblock structure used to convert Heated Coolant&r into power. The minimum size is 5x5x5, with the maximum size being 17x17x18."
+				""
+				"To build the Turbine, we'll need several blocks so let's start with the basics."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Just like most Mekanism multiblocks, the frame must be made out of Turbine Casings&r. However, instead of Reactor Glass, you can use Structural Glass&r or Casings for each face."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"We're going to build this Turbine, and the quest requires the exact materials needed."
+			]
+			id: "6313B18820445882"
+			min_width: 300
+			rewards: [{
+				id: "0963F21E8369E149"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "How To Build?"
+			tasks: [
+				{
+					count: 52L
+					id: "0C8EF4390F02EBC4"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+				{
+					count: 52L
+					id: "3CD4768A3FCA49FF"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+			]
+			title: "The Industrial Turbine"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6313B18820445882"]
+			description: [
+				"Turbine Valves&r are used to pump in Steam, as well as pumping out the power that the Turbine creates."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Turbine Vents&r are used to pump out excess water when using Saturating Condensers. Otherwise, these help increase the overall flow of steam within the Turbine. The total number of Vents also limits the total Steam Flow Rate. Vents can also be used on the top face of the Turbine, but for this build, we'll just be using them on the outside faces."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Saturating Condensers are used to convert Steam&r back into water. These are placed on or above the layer containing the Electromagnetic Coils."
+			]
+			id: "233E438357CD89F6"
+			min_width: 300
+			rewards: [{
+				id: "0A4A1734D68DC205"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					count: 2L
+					id: "3E72FC25B884DFFC"
+					item: "mekanismgenerators:turbine_valve"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "4D32BE4920464ED0"
+					item: "mekanismgenerators:turbine_vent"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2C56599158C13CDF"
+					item: "mekanismgenerators:saturating_condenser"
+					type: "item"
+				}
+			]
+			title: "The Ports.."
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6313B18820445882"]
+			description: [
+				"The Turbine Rotor&r is placed in the middle of the Turbine. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For every Turbine Rotor, you will need 2 Turbine Blades. For this Turbine, we'll be using 3 Rotors!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"While looking at the Rotor, Right-clicking with Turbine Blades&r will place them directly onto the Rotor. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The taller the Rotor, the longer the Blades will become. "
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For this build, we are using 6 total Blades. If you plan on building a bigger Turbine, you will need to increase the width of the Turbine depending on how many Blades you plan on using."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Rotational Complex&r must be placed at the top of the Turbine Rotor. This is then surrounded by Pressure Dispersers&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Dispersers must fill out the entire layer where the Rotational Complex sits."
+				""
+			]
+			id: "05D20B506213A449"
+			min_width: 300
+			rewards: [{
+				id: "5FDADDDF8428A238"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					count: 3L
+					id: "69CE83F6561383E5"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+				{
+					id: "2902E36FD3AC8E68"
+					item: "mekanismgenerators:rotational_complex"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1E9FDE2560C1AB7C"
+					item: "mekanism:pressure_disperser"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "526F17523CE9BDF5"
+					item: "mekanismgenerators:turbine_blade"
+					type: "item"
+				}
+			]
+			title: "The Rotor"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6313B18820445882"]
+			description: [
+				"The Electromagnetic Coil&r is placed directly on top of the Rotational Complex&r to convert the kinetic energy into power."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You can use multiple, with 7 being the max with a Turbine using 28 blades. These must either touch another Coil, or the Rotational Complex."
+			]
+			id: "7C61906C6C87C97D"
+			rewards: [{
+				id: "18AE58687D78BB0F"
+				type: "xp"
+				xp: 25
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "4C0CC372A8597375"
+				item: "mekanismgenerators:electromagnetic_coil"
+				type: "item"
+			}]
+			title: "Electromagnetic Coil"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"233E438357CD89F6"
+				"7C61906C6C87C97D"
+				"05D20B506213A449"
+			]
+			description: [
+				"If you've built the Turbine properly, you will see red particles around the structure. Right clicking on the Turbine will open up the interface."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"This will tell you all of the information that you need to know, including the total Steam Flow Rate, as well as the total Steam inside of the Turbine."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"On the right, you will have a bar that shows you the Power that is stored inside of the Turbine. If this gets full, the Turbine will turn off, unless you set it to Vent Overflow."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Once you have a fully functioning Fission Reactor, pump out the Steam directly into a Turbine Valve on your Turbine. Since we're using Saturating Condensers in this build, you can pump out water from a Turbine Vent back into your Reactor if you want."
+			]
+			id: "4189BC3DFB551F4C"
+			min_width: 300
+			rewards: [{
+				id: "3B59F78B29ABD642"
+				type: "xp"
+				xp: 250
+			}]
+			size: 1.25d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "2FFE6CDB1C5E6BA6"
+				item: "mekanismgenerators:turbine_blade"
+				type: "item"
+			}]
+			title: "Creating Powa!"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["24174700F7FB771C"]
+			description: [
+				"If we want to create massive amounts of power, we'll need a way to store all of it, and those Energy Cubes just won't cut it."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"We're going to create a customizable multiblock used to store large amounts of power, but first, we need to make some Lithium Dust!"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You should have some Brine being made from a previous quest using the Thermal Evaporation Plants&r. Run the Brine&r through another Thermal Evaporation Plant&r to get Lithium, then through a Chemical Crystallizer&r to get a Lithium Dust&r."
+			]
+			icon: "mekanism:upgrade_energy"
+			id: "0FF852DE33E41C90"
+			min_width: 250
+			rewards: [{
+				id: "6FBC38ABC17E2BFF"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				id: "31A1425AA09C33F8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/lithium"
+					}
+				}
+				title: "Lithium Dust"
+				type: "item"
+			}]
+			title: "Advanced Power Storage"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0FF852DE33E41C90"]
+			description: [
+				"Almost every Mekanism multiblock is built the same way."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"You'll need to make a rectangular prism structure. The edges must be made out of Induction Casings&r. The faces can be made of either Casings, Structural Glass&r, or Induction Ports&r. It's best to have 2 Ports: one for input, and one for output. These can be changed using the Configurator&r."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"For this build, we'll be making a 5x5x5. This quest requires the exact amount of materials needed to build this. Need help? Check out the Ponder!"
+			]
+			hide_until_deps_visible: false
+			id: "673FCBF8685D0EEE"
+			min_width: 300
+			rewards: [{
+				id: "47EF9E0FC6A57445"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					count: 44L
+					id: "6D0EB8C587E34699"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6468D6A69F683E6D"
+					item: "mekanism:induction_port"
+					type: "item"
+				}
+				{
+					count: 55L
+					id: "5586FBB0561715AD"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+			]
+			title: "Building The Induction"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0FF852DE33E41C90"]
+			description: [
+				"The Induction Matrix allows you to customize how much power you can store and transfer by adding Cells and Providers inside of the multiblock structure."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Induction Cells increase the total amount of power that can be stored."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Induction Providers increase the total transfer speed both in and out of the Matrix."
+				""
+			]
+			hide_until_deps_visible: false
+			id: "14D772808D1BEAE2"
+			min_width: 350
+			rewards: [{
+				id: "3CC428CF1A7974C7"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					id: "4063C1B5F935A026"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_induction_cell"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_induction_cell"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_induction_cell"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_induction_cell"
+								}
+							]
+						}
+					}
+					title: "Induction Cells"
+					type: "item"
+				}
+				{
+					id: "2E3FF129C3668DD8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_induction_provider"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_induction_provider"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_induction_provider"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_induction_provider"
+								}
+							]
+						}
+					}
+					title: "Induction Providers"
+					type: "item"
+				}
+			]
+			title: "Power Limits"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"673FCBF8685D0EEE"
+				"14D772808D1BEAE2"
+			]
+			description: [
+				"Once you've finished building your first Energized Induction Matrix&r, you'll see red particles all around the structure to show that it is complete."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Don't be afraid to upgrade with higher tier Cells and Providers! Need more space for them? The maximum size the Induction Matrix can be is 18x18x18."
+			]
+			icon: "mekanism:ultimate_induction_cell"
+			id: "07ECC87DFF2D3991"
+			rewards: [{
+				id: "19F7348CFE7A14C9"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "netheritetier"
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					count: 44L
+					id: "0BF23825EE11DF6D"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6BADC678793385B9"
+					item: "mekanism:induction_port"
+					type: "item"
+				}
+				{
+					count: 55L
+					id: "59BC537DAD76299C"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+				{
+					id: "1F13B8408F7D7833"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_induction_cell"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_induction_cell"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_induction_cell"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_induction_cell"
+								}
+							]
+						}
+					}
+					title: "Induction Cells"
+					type: "item"
+				}
+				{
+					id: "6953D5E8C8F8C624"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_induction_provider"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_induction_provider"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_induction_provider"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_induction_provider"
+								}
+							]
+						}
+					}
+					title: "Induction Providers"
+					type: "item"
+				}
+			]
+			title: "Finishing!"
+			x: -1.0d
+			y: -4.5d
+		}
+	]
+	title: "Mekanism: Advanced"
+}

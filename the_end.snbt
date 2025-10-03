@@ -1,0 +1,1569 @@
+{
+	autofocus_id: "657FE1419444750E"
+	default_hide_dependency_lines: false
+	default_quest_shape: "netheritetier"
+	filename: "the_end"
+	group: "3C6AB1DE39D4F441"
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/t_upper.png"
+		}
+	}
+	id: "6C170F941B965F3E"
+	images: [{
+		alpha: 26
+		height: 3645.0d
+		image: "createdieselgenerators:block/concrete/purple_concrete"
+		rotation: 0.0d
+		width: 3464.0d
+		x: 16.5d
+		y: 2.5d
+	}]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:block/end_portal_frame_top"
+				}
+			}
+			id: "657FE1419444750E"
+			rewards: [{
+				id: "0586799E26B991B2"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "netheritetier"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "minecraft:block/end_portal_frame_top"
+					}
+				}
+				id: "316F5D5492B6F8BF"
+				structure: "minecraft:stronghold"
+				type: "structure"
+			}]
+			title: "Locate &5The Stronghold&r"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45D9C9CD7B2568A0"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "rubinated_nether:block/reactor/end_run"
+				}
+			}
+			id: "133696D3887F1B9D"
+			rewards: [{
+				id: "718122DBA8503402"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "netheritetier"
+			subtitle: "So, it starts."
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "minecraft:textures/entity/end_portal.png"
+					}
+				}
+				id: "571D07730E9342D7"
+				type: "dimension"
+			}]
+			title: "Enter &5The End&r"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"263D24D35E699557"
+				"7F0434CFE9CAEF07"
+				"6AD07DC2ED3C734D"
+				"3DE8FE441A0B051C"
+				"1B9101B42DCED261"
+				"35B7FDB1000EEAF9"
+				"4E969D7F19948E4A"
+				"49EFA88FEABB1195"
+				"2BC3AA0B480C6828"
+				"62536E37C53A9260"
+				"7A601E36B70D975C"
+				"72EFFD1039B48784"
+				"6A9C9E7ADB45F1BE"
+				"6F658E35279100C8"
+				"3239B2CDB852E1C6"
+				"64E302C442B729B8"
+				"657FE1419444750E"
+			]
+			dependency_requirement: "one_started"
+			description: ["It's Not Like You Need All Twelve Btw."]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "mofus_better_end_:item/endvoidcrystal"
+				}
+			}
+			id: "45D9C9CD7B2568A0"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "5EABDC15738594F0"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "netheritetier"
+			size: 1.25d
+			subtitle: "&eEnter The End Portal using twelve of the unique eyes."
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: "minecraft:ender_eye"
+				id: "126F26CCB046CD5D"
+				title: "Entering The End"
+				type: "dimension"
+			}]
+			title: "&dThe End?"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "4E969D7F19948E4A"
+			optional: true
+			rewards: [{
+				id: "03A64D0BFDE7D47A"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Dropped by Elder Guardians (33%)"
+			tasks: [{
+				id: "2B0F03865A9E31B9"
+				item: {
+					Count: 1
+					id: "endrem:guardian_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "2BC3AA0B480C6828"
+			optional: true
+			rewards: [{
+				id: "44F48190DA64CB55"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Dropped by Evokers (5%)"
+			tasks: [{
+				id: "5B03491401B0489E"
+				item: {
+					Count: 1
+					id: "endrem:magical_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "3239B2CDB852E1C6"
+			optional: true
+			rewards: [{
+				id: "1769B2B7D26FCFFB"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Dropped by the Wither."
+			tasks: [{
+				id: "51D9182AB02AE780"
+				item: {
+					Count: 1
+					id: "endrem:wither_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "6F658E35279100C8"
+			optional: true
+			rewards: [{
+				id: "68C074B749D306E1"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Crafted using the Witch Pupil"
+			tasks: [{
+				id: "3E473BEA23E8C1FE"
+				item: {
+					Count: 1
+					id: "endrem:witch_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "6A9C9E7ADB45F1BE"
+			optional: true
+			rewards: [{
+				id: "4164C32B235E532E"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Created using an Undead Soul."
+			tasks: [{
+				id: "278B4A1FD0493FD0"
+				item: {
+					Count: 1
+					id: "endrem:undead_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "35B7FDB1000EEAF9"
+			optional: true
+			rewards: [{
+				id: "756EEBB20B150512"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Crafted using acuatic items"
+			tasks: [{
+				id: "788EEC3D5D81C3AF"
+				item: {
+					Count: 1
+					id: "endrem:exotic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "263D24D35E699557"
+			optional: true
+			rewards: [{
+				id: "55F22603FD323209"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Found in Buried Chests"
+			tasks: [{
+				id: "1F9EF219BAB85A92"
+				item: {
+					Count: 1
+					id: "endrem:black_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "7F0434CFE9CAEF07"
+			optional: true
+			rewards: [{
+				id: "2F36984965B8FCA2"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Found in Igloos."
+			tasks: [{
+				id: "2CC6D9A1017107EB"
+				item: {
+					Count: 1
+					id: "endrem:cold_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "6AD07DC2ED3C734D"
+			optional: true
+			rewards: [{
+				id: "5C161296B38F25A5"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Found in Pillager Outposts"
+			tasks: [{
+				id: "6D325AC3E295E65A"
+				item: {
+					Count: 1
+					id: "endrem:corrupted_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "49EFA88FEABB1195"
+			optional: true
+			rewards: [{
+				id: "4D26C098FEAC1F85"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Found in Mineshafts."
+			tasks: [{
+				id: "25DDD301B747C01E"
+				item: {
+					Count: 1
+					id: "endrem:lost_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "62536E37C53A9260"
+			optional: true
+			rewards: [{
+				id: "6AA5639A474A325D"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Found in Nether Fortresses"
+			tasks: [{
+				id: "1C3BD6942EC2E46D"
+				item: {
+					Count: 1
+					id: "endrem:nether_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "7A601E36B70D975C"
+			optional: true
+			rewards: [{
+				id: "02C50C5CC18850C8"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Found in Desert Pyramids. "
+			tasks: [{
+				id: "1628A0166F3301FF"
+				item: {
+					Count: 1
+					id: "endrem:old_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "72EFFD1039B48784"
+			optional: true
+			rewards: [{
+				id: "5C31A0A4BDCA7F81"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Found in Jungle Pyramids"
+			tasks: [{
+				id: "1239D763D441A4BF"
+				item: {
+					Count: 1
+					id: "endrem:rogue_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			description: ["&eOnce the trade is unlocked, it will not have stock until a day passes."]
+			hide_dependency_lines: true
+			id: "1B9101B42DCED261"
+			optional: true
+			rewards: [{
+				id: "5D0AA58ECA3B1B8B"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Bought from a master Cleric."
+			tasks: [{
+				id: "7B812622B4A52172"
+				item: {
+					Count: 1
+					id: "endrem:evil_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "3DE8FE441A0B051C"
+			optional: true
+			rewards: [{
+				id: "7813FCA4E227F5F3"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Found in Bastions"
+			tasks: [{
+				id: "04E8914428590507"
+				item: {
+					Count: 1
+					id: "endrem:cursed_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["657FE1419444750E"]
+			hide_dependency_lines: true
+			id: "64E302C442B729B8"
+			optional: true
+			rewards: [{
+				id: "76BF96BA32CDD0C5"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			subtitle: "&7Infusable in an Enchanting Table."
+			tasks: [{
+				id: "685E4965B8364BEC"
+				item: {
+					Count: 1
+					id: "endrem:cryptic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["133696D3887F1B9D"]
+			description: [
+				"&5&oAs you open the End Archive, a strange energy pulses from its pages."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"&5&oThe words shift and reshape themselves as if written by the void itself."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"&5&oA path lies before you — fragmented, dangerous, and filled with forgotten power."
+			]
+			id: "57337DEF6AAC3776"
+			rewards: [{
+				id: "718874A6681DF059"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "In-game Wiki"
+			tasks: [{
+				id: "517E3BA688084A4C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 0
+						}
+					}
+					id: "mofus_better_end_:end_archive_book"
+					tag: {
+						Inventory: {
+							Items: [ ]
+							Size: 0
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3857E514ECC0BB0A"
+				"4CBE821B2341B231"
+				"1211E3AEE1BE1763"
+				"40C2759B75765B83"
+				"6C29DC6BDABC33E2"
+			]
+			description: [
+				"Main objective of the End as well as used to open the portal."
+				""
+				"This looks almost &oSacred&r i wonder if there's a table i could put it? (It's meteorites)"
+			]
+			icon_scale: 1.5d
+			id: "5AF1F120184D38DE"
+			rewards: [{
+				id: "2847BA91744EB389"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "goldtier"
+			subtitle: "Important!"
+			tasks: [{
+				id: "58B1398B7B098AD8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 0
+						}
+					}
+					id: "mofus_better_end_:book_of_void"
+					tag: {
+						Inventory: {
+							Items: [ ]
+							Size: 0
+						}
+						bookopen1: 0.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"63A93D5E899B6A3C"
+				"7375FC3C0FC1FC1A"
+			]
+			description: [
+				"Remaining components can be found here."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"A certain tower's table has a surprise item :)"
+			]
+			id: "568CB0E1269208A7"
+			rewards: [{
+				id: "5CA8656550CFDB4C"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Final Structure"
+			tasks: [{
+				id: "3882C994AE0459BD"
+				structure: "mofus_better_end_:clocktower"
+				title: "Clock Tower"
+				type: "structure"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57337DEF6AAC3776"]
+			description: [
+				"You can Kill the Eye Guardian Tower using a pickaxe (modded ones too)."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"A map for the Clock tower can be found here."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Broken End Glass can also be found here."
+			]
+			id: "7375FC3C0FC1FC1A"
+			rewards: [{
+				id: "64C7FD720C29462A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7696992EB5E482AE"
+				structure: "mofus_better_end_:endobservatory"
+				title: "End Observatory"
+				type: "structure"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["634DD6D93B14B8AB"]
+			id: "4CBE821B2341B231"
+			rewards: [{
+				id: "20C6F9F493A175B2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "336A1BCFE873620C"
+				item: "mofus_better_end_:void_glass_globe"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C42D39B90285C76"]
+			description: ["Find Labyrinth Crystal shards and make the Labyrinth Crystal."]
+			id: "53207B3D78A1D692"
+			rewards: [{
+				id: "0F2BDA99A017584E"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Not Guaranteed"
+			tasks: [{
+				id: "2DC71363752699C2"
+				structure: "mofus_better_end_:endlabyrinth"
+				title: "End Labyrinth"
+				type: "structure"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"53207B3D78A1D692"
+				"6C42D39B90285C76"
+			]
+			id: "1211E3AEE1BE1763"
+			rewards: [{
+				id: "1C70BA44B62890AE"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6ACDF5220F5D35D7"
+				item: "mofus_better_end_:labyrinth_crystal"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["57337DEF6AAC3776"]
+			description: [
+				"Poison pearl drops from breaking endermite eggs in the mound."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"The Crystal Mite Eye is crucial too."
+			]
+			id: "6C42D39B90285C76"
+			rewards: [{
+				id: "5944AE117A067A6F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3D2AFA57AB243FF8"
+				structure: "mofus_better_end_:endermite_mound"
+				title: "Endermite Mound"
+				type: "structure"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["57337DEF6AAC3776"]
+			id: "77CEA9162FED9313"
+			rewards: [{
+				id: "5F1053BD3A2A45CA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				icon: "mofus_better_end_:mitequeenaltar"
+				id: "57EA537FE25FE649"
+				observe_type: 0
+				timer: 0L
+				title: "Endemite Queen Altar"
+				to_observe: "mofus_better_end_:mitequeenaltar"
+				type: "observation"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["77CEA9162FED9313"]
+			description: ["It will hatch overtime while in inventory."]
+			icon_scale: 1.2d
+			id: "4C0303E412895B3E"
+			rewards: [{
+				id: "6E32C5E6DB348FDA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "27B9394C54DE800A"
+				item: {
+					Count: 1
+					id: "mofus_better_end_:endermite_idol_egg"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4C0303E412895B3E"]
+			description: [
+				"Option A: Sacrifice it"
+				""
+				"Option B: Keep it"
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"It can remove some negative effects. Can be fed with Starfly Powder."
+			]
+			id: "62F05599A5DCC223"
+			rewards: [{
+				id: "298B86E9C727C666"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Do want it?"
+			tasks: [{
+				id: "200B88A41AD272AA"
+				item: {
+					Count: 1
+					id: "mofus_better_end_:endermite_queen_idol"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["62F05599A5DCC223"]
+			description: ["In order to sacrafice it you need 5 Blood Jugs first and then cover the queen altar and the surrounding ritual blocks with it."]
+			id: "7B2642D040B31F65"
+			rewards: [{
+				id: "1059F55E8A9701BB"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				count: 5L
+				id: "76735F132E896549"
+				item: "mofus_better_end_:blood_jug"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7B2642D040B31F65"]
+			id: "3E31A23C5CB64ECA"
+			rewards: [{
+				id: "3D3F74605C041B4F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "mofus_better_end_:summon_mite_queen_advancement"
+				criterion: ""
+				id: "53DEFF05EA820827"
+				type: "advancement"
+			}]
+			x: 13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3E31A23C5CB64ECA"]
+			id: "3857E514ECC0BB0A"
+			rewards: [{
+				id: "1EC8C954DAB61F99"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				entity: "mofus_better_end_:endermite_queen"
+				icon: "mofus_better_end_:mite_queen_soul"
+				id: "4A7D86A0E85B06F0"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat Endermite Queen"
+			x: 15.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["57337DEF6AAC3776"]
+			description: ["Most of the biome items can be found here including Stardust or Broken End Glass (in the attic chest but not guaranteed)."]
+			id: "33B6824557D3E2C2"
+			rewards: [{
+				id: "3B93F2374D94D2A1"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3A75E538D3535AD4"
+				structure: "mofus_better_end_:lonely_home"
+				title: "The Lonely House"
+				type: "structure"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["33B6824557D3E2C2"]
+			id: "634DD6D93B14B8AB"
+			rewards: [{
+				id: "13FBB81ED81F1A94"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "4ACE9DF361935158"
+				item: "mofus_better_end_:broken_end_glass"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["57337DEF6AAC3776"]
+			description: ["A map for the Clock tower can be found here."]
+			id: "63A93D5E899B6A3C"
+			rewards: [{
+				id: "7A06415528C41D5E"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "An Upside Down House?"
+			tasks: [{
+				id: "319357E9818E4C3C"
+				structure: "mofus_better_end_:cryohouse"
+				title: "Cryo House"
+				type: "structure"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["57337DEF6AAC3776"]
+			description: ["Be sure to use a pickaxe to kill eye guardian. "]
+			id: "63C2F8E96A041DD5"
+			rewards: [{
+				id: "0768771BD453E09F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3A73A242F8300D35"
+				structure: "mofus_better_end_:cryostonecastle"
+				title: "Cryo Castle Garden"
+				type: "structure"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["63C2F8E96A041DD5"]
+			description: ["Found in the deepest part of the structure so you can just build here if you want to."]
+			id: "448B782BD83ABCD8"
+			rewards: [{
+				id: "1D54EEED1D782989"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				icon: "mofus_better_end_:frost_root_fosend_source"
+				id: "54E9117674FD6A6C"
+				observe_type: 0
+				timer: 0L
+				title: "Fosend Source"
+				to_observe: "mofus_better_end_:frost_root_fosend_source"
+				type: "observation"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["448B782BD83ABCD8"]
+			description: ["You need 2 of them total but there's only one/castle garden so have fun :D"]
+			id: "483A15C6669B9002"
+			rewards: [{
+				id: "7311FF0107CB78D0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3C67421228ACF593"
+				item: "mofus_better_end_:unrefined_fosend"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["483A15C6669B9002"]
+			id: "6C29DC6BDABC33E2"
+			rewards: [{
+				id: "032EFCFAED2464E7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "61213FE26186D9B5"
+				item: "mofus_better_end_:weird_mechanical_core"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["568CB0E1269208A7"]
+			description: [
+				"In order to beat the Boss of the mod first you have to beat the 4 mini-bosses on top of the 4 surrounding tower."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Activate the Altar with a FosEnd Energy Cube."
+				"{image:fzzy_config:textures/gui/sprites/widget/popup/divider.png width:200 height:15 align:center}"
+				"Once beaten quickly right click the spawned Key."
+			]
+			icon_scale: 1.3d
+			id: "3543034097FA503A"
+			rewards: [{
+				id: "4A38830B642E92B7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				icon: "mofus_better_end_:guardian_altar"
+				id: "2459A37708DCABD0"
+				observe_type: 0
+				timer: 0L
+				title: "Guardian Altar"
+				to_observe: "mofus_better_end_:guardian_altar"
+				type: "observation"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3543034097FA503A"]
+			description: ["Used to awaken the Boss."]
+			id: "4D067C79FDEC8E0F"
+			rewards: [{
+				id: "0FFD8FC6C98E176E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "670464F48F6EAAAE"
+				item: {
+					Count: 1
+					id: "mofus_better_end_:mechanical_fosend_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4D067C79FDEC8E0F"]
+			id: "40C2759B75765B83"
+			rewards: [{
+				id: "1FB5BD409F0ACE10"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				entity: "mofus_better_end_:eye_guardian"
+				icon: "mofus_better_end_:eye_guardian_angel_eye"
+				id: "238B4FA1FD310178"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat Eye Guardian"
+			x: 13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5AF1F120184D38DE"]
+			description: ["Use it to fill the portal Frame."]
+			id: "754AC1712D409870"
+			rewards: [{
+				id: "41671161ECB6E5E2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "210AB9E8C8BEEB59"
+				item: "mofus_better_end_:void_core"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["754AC1712D409870"]
+			description: [
+				"Used to repair the bell above the portal in order to be able to activate it."
+				""
+				"Fragment can be found in the separate tower."
+			]
+			id: "2E88750CFA8059A0"
+			rewards: [{
+				id: "631E79FEBACD48C7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "14949031CC7F088C"
+				item: "mofus_better_end_:clock_tower_clapper"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B31DBA2FC58CA4D"]
+			description: ["[ \"Craft a spell using the first recipe of the \", { \"text\": \"Book\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5AF1F120184D38DE\" } }, \".\" ]"]
+			id: "0128BE2ED193E7EB"
+			rewards: [{
+				id: "0EFD7E489E4E4CAA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "mofus_better_end_:magic_sheet_advancement"
+				criterion: ""
+				id: "15CA856312169BD8"
+				type: "advancement"
+			}]
+			title: "Infinite POWAAAAAAAAAAA"
+			x: 38.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5BF5E9E48CFD035C"]
+			id: "1B31DBA2FC58CA4D"
+			rewards: [{
+				id: "254E36DF94ADD5C5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				entity: "mofus_better_end_:reborn_litch"
+				icon: "mofus_better_end_:disc_piece_1"
+				id: "3EABA8379DDEEB7B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill Reborn Litch"
+			x: 36.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["074B7BE90B6F3804"]
+			description: ["Touch the ominous swirling purple puddle... what could go wrong?"]
+			id: "5BF5E9E48CFD035C"
+			rewards: [{
+				id: "6D65B2133C5115C6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "mofus_better_end_:reborn_litch_advancement"
+				criterion: ""
+				id: "26B674CCD5A580AF"
+				type: "advancement"
+			}]
+			title: "Reborn Again.."
+			x: 35.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["65FEFF2870D61E4D"]
+			description: ["Good you made it up."]
+			id: "074B7BE90B6F3804"
+			rewards: [{
+				id: "3484F733B463ABB5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5CB47C4E43F53597"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			title: "Have fun :D"
+			x: 33.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5BCD9B4DC636886B"]
+			icon_scale: 1.5d
+			id: "65FEFF2870D61E4D"
+			rewards: [{
+				id: "2A3B692778F35488"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Look up!"
+			tasks: [{
+				entity: "mofus_better_end_:forgotten_litch"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 23
+						}
+					}
+					id: "mofus_better_end_:forgotten_litch_staff"
+				}
+				id: "2732065768B247B0"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat Forgotten Litch"
+			x: 32.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1B9EF948B55EC804"
+				"20E3EFA754390669"
+			]
+			id: "5BCD9B4DC636886B"
+			rewards: [{
+				id: "3944B243E92E20D8"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "You're gonna need the staff"
+			tasks: [{
+				advancement: "mofus_better_end_:litch_meeting_advancement"
+				criterion: ""
+				id: "16F04F7CD2709EB7"
+				type: "advancement"
+			}]
+			title: "Meet the litch"
+			x: 30.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6EE84210A023825C"]
+			icon_scale: 1.5d
+			id: "20E3EFA754390669"
+			rewards: [{
+				id: "377682E66058C768"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5D5C64D474E3A3BD"
+				item: {
+					Count: 1
+					id: "mofus_better_end_:green_crystal_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 28.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["43B54FD2DC5FE04E"]
+			id: "1B9EF948B55EC804"
+			rewards: [{
+				id: "292F39C59B7E39FA"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Special item so why not get it?"
+			tasks: [{
+				id: "281D44071750AC3C"
+				item: "mofus_better_end_:sacred_table"
+				type: "item"
+			}]
+			x: 29.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2E88750CFA8059A0"]
+			hide_until_deps_complete: true
+			id: "30DCF0653871F3E4"
+			rewards: [{
+				id: "68044CF49C3E225E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "mofus_better_end_:broken_constellations_advancement"
+				criterion: ""
+				id: "07F701DEA288FC15"
+				type: "advancement"
+			}]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30DCF0653871F3E4"]
+			description: [
+				"&oI wonder if there's a switch or a sensor anywhere..."
+				""
+				"Core can only be damaged by a pickaxe and there's a cooldown between hits."
+			]
+			id: "4F8C37D835D9ACBC"
+			rewards: [{
+				id: "150C944EB3809027"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "76A5CD93BD0C3CAC"
+				structure: "mofus_better_end_:luminion_labyrinth"
+				title: "Luminion Labyrinth"
+				type: "structure"
+			}]
+			x: 28.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4F8C37D835D9ACBC"]
+			id: "3E4DC91FCE87CBFC"
+			rewards: [{
+				id: "6FA4EC81787591D1"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "I wonder where it could be?"
+			tasks: [{
+				icon: "mofus_better_end_:titanium_chest"
+				id: "20216D09A2994D76"
+				observe_type: 0
+				timer: 0L
+				title: "Titanium Chest"
+				to_observe: "mofus_better_end_:titanium_chest"
+				type: "observation"
+			}]
+			x: 30.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3E4DC91FCE87CBFC"]
+			id: "3269A86B2ACEFE45"
+			rewards: [{
+				id: "16AF87050EECF278"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "3 Should be enough"
+			tasks: [{
+				id: "1205926C1FE73B91"
+				item: "mofus_better_end_:luminion_core_item"
+				type: "item"
+			}]
+			x: 32.60000000000001d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3269A86B2ACEFE45"]
+			id: "4F3EC8D3308A7128"
+			rewards: [{
+				id: "7E30B37426F0B593"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "75EBFC1FE8A2C1CE"
+				item: {
+					Count: 1
+					id: "mofus_better_end_:luminion_drill"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 34.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3269A86B2ACEFE45"]
+			id: "41BC16061A08B89F"
+			rewards: [{
+				id: "75DF625F8A9F5A10"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "6F1687CFBD9A9E09"
+				item: "mofus_better_end_:mech_creation_station"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["30DCF0653871F3E4"]
+			id: "050FDE080A09A639"
+			rewards: [{
+				id: "151C468DD11EF6A0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "458BE33AC0118248"
+				structure: "mofus_better_end_:forgotten_town"
+				title: "Forgotten Town"
+				type: "structure"
+			}]
+			x: 28.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["050FDE080A09A639"]
+			id: "43B54FD2DC5FE04E"
+			rewards: [{
+				id: "6B2B28FEAAFDEA10"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "mofus_better_end_:forgotten_trade_advancement"
+				criterion: ""
+				id: "62ECBCF89A58AEB2"
+				type: "advancement"
+			}]
+			title: "Poor lost souls..."
+			x: 28.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["43B54FD2DC5FE04E"]
+			id: "5AD7D87CFE62E59E"
+			rewards: [{
+				id: "3EC84BAAB05FFBC0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "634BD74CEB63E64B"
+				item: "mofus_better_end_:survival_crystal"
+				type: "item"
+			}]
+			x: 26.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["43B54FD2DC5FE04E"]
+			id: "6EE84210A023825C"
+			rewards: [{
+				id: "7E4DB16E0ED08B66"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0570E19FC00C963C"
+				item: "mofus_better_end_:litchsstinger"
+				type: "item"
+			}]
+			x: 27.780272108843604d
+			y: 4.413265306122476d
+		}
+		{
+			dependencies: ["6EE84210A023825C"]
+			description: ["Insta casts Magic Sheets"]
+			icon_scale: 1.5d
+			id: "49DA3A4865970E2C"
+			rewards: [{
+				id: "1A8B100D7D632AE5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0F21E53F39F13871"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 23
+						}
+					}
+					id: "mofus_better_end_:forgotten_litch_staff"
+					tag: {
+						Inventory: {
+							Items: [{
+								Count: 1b
+								Slot: 0
+								id: "mofus_better_end_:void_core"
+							}]
+							Size: 23
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 26.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6EE84210A023825C"]
+			icon_scale: 1.5d
+			id: "1E118E4A0802AB67"
+			rewards: [{
+				id: "231B73094E4AB5A8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "71D34E11DCD8CF1C"
+				item: {
+					Count: 1
+					id: "mofus_better_end_:forgotten_axe_item"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 27.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0128BE2ED193E7EB"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "fzzy_config:textures/gui/sprites/widget/action/accept.png"
+				}
+			}
+			icon_scale: 1.5d
+			id: "0C8AE2A31595B957"
+			rewards: [{
+				id: "4D1DA47C8A2E87A1"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			subtitle: "Macabre"
+			tasks: [{
+				id: "7FF541829839836D"
+				title: "who da fuh?!!"
+				type: "checkmark"
+			}]
+			title: "They're calling for your name"
+			x: 39.5d
+			y: 6.0d
+		}
+	]
+	title: "The End"
+}

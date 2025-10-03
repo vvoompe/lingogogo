@@ -1,0 +1,207 @@
+{
+	autofocus_id: "742CC8ADFE70A77B"
+	default_hide_dependency_lines: true
+	default_quest_shape: "goldtier"
+	filename: "unearthed_journey"
+	group: "52FA8429D8BF5933"
+	icon: {
+		Count: 1
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "hexerei:textures/book/u_upper.png"
+		}
+	}
+	id: "0AA47C2171538402"
+	images: [
+		{
+			height: 1.2d
+			hover: ["Neogene"]
+			image: "unearthed_journey:textures/screens/neogene_portal_corner_icon.png"
+			rotation: 0.0d
+			width: 1.2d
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			height: 1.2d
+			hover: ["Pleistocene"]
+			image: "unearthed_journey:textures/screens/pleistocene_portal_corner_icon.png"
+			rotation: 0.0d
+			width: 1.2d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			height: 1.2d
+			hover: ["Paleogene"]
+			image: "unearthed_journey:textures/screens/paleogene_portal_corner_icon.png"
+			rotation: 0.0d
+			width: 1.2d
+			x: -1.5d
+			y: 1.0d
+		}
+	]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&eTraveling Back"
+				""
+				"Methuselah's eye can power the unearthed portals that scattered around the world."
+				""
+				"Unearthed Journey is a mod that adds 3 dimensions of Cenozoic content to the game!"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "unearthed_journey:item/eye_of_methuselah"
+				}
+			}
+			id: "742CC8ADFE70A77B"
+			rewards: [{
+				id: "78C9B032CDAFA4A2"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "goldtier"
+			subtitle: "&8[Click to read]"
+			tasks: [
+				{
+					entity: "unearthed_journey:methuselah_boss"
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "unearthed_journey:item/chert_sword"
+						}
+					}
+					id: "140BD52D2768BDAC"
+					title: "Kill Methuselah"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "5FBD1B4B94E9EFBA"
+					item: {
+						Count: 1
+						id: "unearthed_journey:eye_of_methuselah"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["742CC8ADFE70A77B"]
+			description: ["The Paleogene Period that spans 43 million years from the end of the Cretaceous Period 66 Ma (million years ago) to the beginning of the Neogene Period 23.04 Ma!"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "supplementaries:textures/map_marker/nether_portal.png"
+				}
+			}
+			id: "62FE6DCD19C2FADB"
+			rewards: [{
+				id: "2C4B400255157FBD"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			size: 1.0d
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				dimension: "unearthed_journey:paleogene"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "endrem:textures/backgrounds/advance_back.png"
+					}
+				}
+				id: "126C727DCDEC0971"
+				title: "Enter Paleogene Dimension"
+				type: "dimension"
+			}]
+			title: "Enter Paleogene Period"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["742CC8ADFE70A77B"]
+			description: ["The Pleistocene referred to colloquially as the Ice Age, the geological epoch that lasted from 2.58 million to 11,700 years ago!"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "supplementaries:textures/map_marker/nether_portal.png"
+				}
+			}
+			id: "429552EB6A5C37AD"
+			rewards: [{
+				id: "1107613B826E00A6"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				dimension: "unearthed_journey:pleistocene"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "endrem:textures/backgrounds/advance_back.png"
+					}
+				}
+				id: "7766B3241B758ACB"
+				title: "Enter Pleistocene Dimension"
+				type: "dimension"
+			}]
+			title: "Enter Pleistocene Period"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["742CC8ADFE70A77B"]
+			description: ["The Neogene is a geologic period and system that spans 20.45 million years from the end of the Paleogene Period!"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "supplementaries:textures/map_marker/nether_portal.png"
+				}
+			}
+			id: "23438620FD4599DC"
+			rewards: [{
+				id: "4F7318F2FC08E2FB"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			subtitle: "&8[Click to read]"
+			tasks: [{
+				dimension: "unearthed_journey:neogene"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "endrem:textures/backgrounds/advance_back.png"
+					}
+				}
+				id: "1A37E92B4D82DFCF"
+				title: "Enter Neogene Dimension"
+				type: "dimension"
+			}]
+			title: "Enter Neogene Period"
+			x: 1.5d
+			y: 2.0d
+		}
+	]
+	title: "Unearthed Journey"
+}
